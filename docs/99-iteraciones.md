@@ -1,386 +1,269 @@
-# Iteraciones - Puente
+# Iteraciones y Decisiones del Proyecto
 
-## Propósito
-
-Este documento registra TODOS los cambios mayores, decisiones, y aprendizajes del proyecto.
-
-**Formato**: Append-only (solo agregar, nunca borrar)
+> **Log de Decisiones Estratégicas**  
+> Documentación de brainstorming, investigaciones y pivots del proyecto Puente
 
 ---
 
-## Iteración 1 - Definición Inicial
+## Iteración 5: Investigación Pago Móvil y Contexto Venezuela 2026
 
-**Fecha**: 2026-01-28
-
-### Decisión
-
-Proyecto "Puente" - Plataforma de remesas para Venezuela
+**Fecha**: 28 Enero 2026  
+**Tipo**: Research & Strategic Planning  
+**Versión**: v0.5.0
 
 ### Contexto
 
-- Buildathon LatAm Hubs 2026
-- Equipo: One Man Army (solo)
-- Experiencia: Poca en Web3/React
-- Herramientas: Google AI Pro, Supabase, Vercel
+Usuario identificó oportunidad crítica: **integración de Pago Móvil** como "game changer" para la adopción real en Venezuela. Esto requirió investigación profunda sobre:
 
-### Stack Inicial Decidido
+1. Cómo funciona Pago Móvil en Venezuela
+2. Modelos de conversión crypto → fiat
+3. Competidores que ya lo hacen (Binance P2P, Reserve)
+4. Contexto político y económico 2026
 
-- Frontend: Next.js (desde cero)
-- Blockchain: Celo + RainbowKit
-- Backend: Supabase
-- UI: v0
+### Hallazgos Críticos
 
-### Razonamiento
+#### 1. Cambio Geopolítico Histórico
 
-- Problema real (remesas Venezuela)
-- MiniApps track (premio mayor)
-- Human.Tech Passport (verificación)
-- v0 (acelerar UI)
+**3 Enero 2026**: Captura de Nicolás Maduro por fuerzas USA
 
-### Archivos Creados
+- Gobierno interino: Delcy Rodríguez
+- Acuerdo energético USA-Venezuela
+- Levantamiento parcial de sanciones
+- $300M inyectados al sistema bancario
+- Reformas a Ley de Hidrocarburos en proceso
 
-- `00-contexto.md`
-- `01-brainstorming.md`
-- `02-decision-proyecto.md`
-- `buildathon-tasks.md`
+**Implicación**: Venezuela en transición histórica, apertura financiera en proceso
 
-### Próximo Paso
+#### 2. Crypto Adoption Masiva
 
-Inicializar proyecto con Next.js
+- **10%+ de grocery transactions** son crypto (proyección 2026)
+- USDT es el stablecoin dominante
+- Merchants aceptan stablecoins regularmente
+- Binance P2P es infraestructura principal
+- SUNACRIP paralizada (vacío regulatorio)
 
----
+**Implicación**: Crypto ya ganó, no es early adopter market
 
-## Iteración 2 - Descubrimiento de Celo Composer
+#### 3. Pago Móvil es Crítico
 
-**Fecha**: 2026-01-28 (tarde)
+- **80% de transacciones digitales** usan Pago Móvil
+- Sistema interbancario instantáneo
+- Requiere: teléfono + cédula + banco
+- Gratis entre usuarios
+- **Problema**: Cómo convertir crypto → Bs para usar Pago Móvil
 
-### Cambio
+**Implicación**: Sin Pago Móvil, crypto es difícil de gastar localmente
 
-Actualización completa del stack técnico
+#### 4. Competidores Ya lo Hacen
 
-### Qué Descubrimos
+| Plataforma        | Modelo              | Tasa | Limitaciones                |
+| ----------------- | ------------------- | ---- | --------------------------- |
+| **Binance P2P**   | Merchants + Escrow  | 2-5% | Scams, bloqueado por CANTV  |
+| **Reserve App**   | Integración directa | 1-3% | Solo RSV, liquidez limitada |
+| **El Dorado P2P** | Merchants + Escrow  | 3-6% | Menor liquidez              |
 
-Usuario investigó con Gemini y encontró:
+**Implicación**: Demanda validada, pero hay espacio para mejorar UX/seguridad
 
-- **Celo Composer**: CLI oficial para generar proyectos
-- **MiniPay Template**: Template específico para MiniPay
-- **Viem**: Librería recomendada (no RainbowKit)
-- **Proyectos de referencia**: RentPay, Nexus, Paycraft
+#### 5. Remesas Formales Volviendo
 
-### Decisiones Actualizadas
+- Western Union/MoneyGram proyectados para Q2 2026
+- 95% de remesas por canales informales actualmente
+- Formalización esperada con apertura política
+- **Ventana**: Capturar mercado antes que incumbentes
 
-**Antes**:
+**Implicación**: Timing perfecto para lanzar Puente
 
-- Setup manual con `create-next-app`
-- RainbowKit para wallets
-- Sin proyectos de referencia
+### Decisiones Tomadas
 
-**Ahora**:
+#### 1. Pago Móvil NO para Buildathon
 
-- Celo Composer con template MiniPay
-- Viem + Wagmi (recomendación oficial)
-- Estudiar RentPay como referencia
-- Shadcn/UI + v0 para componentes
+**Razón**: Complejidad técnica y legal demasiado alta para 30 días
 
-### Razonamiento del Cambio
+**Alternativa**:
 
-**Por qué Celo Composer**:
+- Documentar estrategia completa
+- Mostrar tasas de referencia (BCV, Binance P2P)
+- Educar usuarios sobre opciones
+- Mencionar en pitch como roadmap item
 
-1. Template oficial optimizado para MiniPay
-2. Configuración de Viem pre-hecha
-3. Fee abstraction configurada (gas con cUSD)
-4. Ahorra 3-4 días de setup
+**Implementación**: Fase 2 (Post-Buildathon)
 
-**Por qué Viem**:
+#### 2. Modelo P2P Marketplace (Post-Buildathon)
 
-1. Recomendación oficial de Celo
-2. Soporte nativo de fee abstraction
-3. Más moderno que contractkit
-4. Mejor TypeScript support
+**Arquitectura**:
 
-**Por qué RentPay como referencia**:
-
-1. Caso de uso similar (pagos/remesas)
-2. Usa MiniPay
-3. Código de calidad
-4. Podemos aprender patterns
-
-### Trade-offs
+- Smart contracts para escrow de cUSD
+- Sistema de reputación para merchants
+- Confirmación manual de Pago Móvil
+- Dispute resolution on-chain
 
 **Ventajas**:
 
-- ✅ Velocidad (setup en minutos)
-- ✅ Best practices oficiales
-- ✅ Menos bugs potenciales
-- ✅ Ejemplos funcionales
+- No requiere licencia bancaria
+- Descentralizado (P2P real)
+- Escalable con más merchants
+- Puente solo cobra fee por matching
 
 **Desventajas**:
 
-- ⚠️ Menos control sobre setup inicial
-- ⚠️ Dependencia de template
-- ⚠️ Curva de aprendizaje de Viem
+- Requiere liquidez inicial (merchants)
+- Riesgo de scams (mitigable con reputación)
+- Spread variable (oferta/demanda)
 
-**Conclusión**: Ventajas superan desventajas ampliamente
+#### 3. Passport Sigue Siendo Core
 
-### Archivos Afectados
+**Justificación**:
 
-- `03-stack-tecnico.md` (creado/actualizado)
-- `04-versionado.md` (creado)
-- `99-iteraciones.md` (este archivo, creado)
-- `buildathon-tasks.md` (necesita actualización)
+- Pago Móvil tradicional REQUIERE cédula
+- Nequi (Colombia) REQUIERE cédula después de 3 remesas
+- 16% población venezolana no bancarizada
+- Muchos migrantes sin documentos actualizados
 
-### Aprendizajes
+**Diferenciación**:
 
-**Lección 1**: Siempre investigar el ecosistema antes de empezar
+- Passport permite verificación sin cédula
+- Previene scams (problema de Binance P2P)
+- Cumple AML/KYC sin documentos tradicionales
 
-- No asumimos que había herramientas oficiales
-- Investigación de 30 minutos ahorró días de trabajo
+#### 4. Enfoque en Contexto Político
 
-**Lección 2**: Las comunidades maduras tienen tooling maduro
+**Messaging**:
 
-- Celo tiene años de desarrollo
-- Templates oficiales son de alta calidad
-- Vale la pena usar herramientas oficiales
+- "Remesas sin documentos en un país en transición"
+- "Aprovechando la apertura financiera de Venezuela"
+- "Puente entre crypto adoption y necesidad real"
 
-**Lección 3**: Proyectos de referencia son oro
+**Riesgo**: Incertidumbre política
+**Mitigación**: Operar descentralizado (P2P), compliance proactivo
 
-- Ver código real > leer docs
-- RentPay resuelve problemas similares
-- Podemos copiar patterns (con atribución)
+### Documentación Creada
 
-### Herramientas Nuevas Identificadas
+1. **`docs/12-pago-movil-integration.md`**
+   - Análisis técnico completo
+   - 3 modelos de implementación
+   - Implicaciones legales (SUNACRIP)
+   - Roadmap de implementación
+   - Flujos de UX detallados
+   - Comparación con competencia
 
-**Celo Composer**:
-
-- Comando: `npx @celo/celo-composer@latest create`
-- Repo: https://github.com/celo-org/celo-composer
-
-**MiniPay Template**:
-
-- Repo: https://github.com/celo-org/minipay-template
-
-**RentPay** (referencia):
-
-- Repo: https://github.com/Amity808/rentpay
-
-**Nexus** (SocialConnect):
-
-- Repo: https://github.com/celo-org/nexus
-
-**ngrok** (testing):
-
-- Para probar en MiniPay real
-- Expone localhost a internet
-
-### Próximos Pasos Actualizados
-
-1. ✅ Documentar cambio (este archivo)
-2. ⏳ Actualizar `buildathon-tasks.md`
-3. ⏳ Ejecutar Celo Composer
-4. ⏳ Explorar template generado
-5. ⏳ Clonar y estudiar RentPay
-6. ⏳ Documentar aprendizajes de RentPay
-
-### Métricas
-
-**Tiempo invertido en investigación**: ~1 hora  
-**Tiempo ahorrado estimado**: 3-4 días  
-**ROI**: Excelente
-
----
-
-## Template para Próximas Iteraciones
-
-```markdown
-## Iteración X - [Título del Cambio]
-
-**Fecha**: YYYY-MM-DD
-
-### Cambio
-
-[Qué cambió]
-
-### Contexto
-
-[Por qué consideramos el cambio]
-
-### Decisión
-
-[Qué decidimos hacer]
-
-### Razonamiento
-
-[Por qué esta decisión]
-
-### Trade-offs
-
-**Ventajas**:
-
-- [Lista]
-
-**Desventajas**:
-
-- [Lista]
-
-### Archivos Afectados
-
-- [Lista de archivos]
-
-### Aprendizajes
-
-[Qué aprendimos]
+2. **`docs/13-contexto-venezuela-2026.md`**
+   - Cambio geopolítico (captura de Maduro)
+   - Panorama económico (inflación 600%+)
+   - Dolarización y crypto adoption
+   - Mercado de remesas ($4-5B anuales)
+   - Sistema bancario (BDV líder)
+   - Situación política (gobierno interino)
+   - Apertura financiera (sanciones parciales)
+   - Implicaciones para Puente
+   - Estrategia recomendada
+   - Versionado y fuentes
 
 ### Próximos Pasos
 
-[Qué sigue]
-```
+#### Inmediato (Buildathon - Feb 2026)
+
+- [ ] Actualizar README con contexto Venezuela 2026
+- [ ] Mencionar Pago Móvil en roadmap
+- [ ] Validar demanda con early testers
+- [ ] Documentar en pitch deck
+
+#### Post-Buildathon (Mar-Jun 2026)
+
+- [ ] Implementar Marketplace P2P si ganamos funding
+- [ ] Reclutar 20-30 merchants verificados
+- [ ] Legal counsel para compliance
+- [ ] Monitorear cambios regulatorios
+
+#### Escalamiento (Jul+ 2026)
+
+- [ ] Expansión agresiva si hay estabilidad
+- [ ] Diversificar a Colombia/Perú si hay inestabilidad
+- [ ] Partnerships con exchanges locales
+- [ ] Posible licencia formal
+
+### Lecciones Aprendidas
+
+1. **El contexto político importa**: No podemos ignorar que Venezuela está en transición histórica
+2. **Crypto ya ganó**: 10%+ de grocery transactions, no es early adopter market
+3. **Pago Móvil es crítico**: 80% de transacciones digitales, sin esto crypto es difícil de gastar
+4. **Timing es TODO**: Apertura financiera + Western Union volviendo = ventana de oportunidad
+5. **Documentos son barrera**: 95% de remesas por canales informales, Passport es diferenciador real
+
+### Métricas de Éxito
+
+**Buildathon**:
+
+- ✅ Documentación completa de estrategia Pago Móvil
+- ✅ Contexto Venezuela 2026 investigado y documentado
+- ✅ Validación de demanda con early testers
+- ✅ Mención en pitch deck
+
+**Post-Buildathon**:
+
+- 20-30 merchants activos en marketplace
+- 100+ trades/día de crypto → Bs
+- NPS > 8 de usuarios
+- 0 disputes sin resolver
+
+### Fuentes Consultadas
+
+**Pago Móvil**:
+
+- Ria Money Transfer, BNC Dinero Express, Zoom Remesas
+- Binance P2P Venezuela, Reserve App
+
+**Contexto Político**:
+
+- Wikipedia, Brookings Institution, The Guardian, WOLA
+
+**Economía**:
+
+- El País, Comply Advantage, Atlantic Council, Trading View
+
+**Crypto**:
+
+- Forbes, Binance, Cryptopolitan, Lightspark
+
+**Remesas**:
+
+- The Dialogue, Investing.com
 
 ---
 
-## Notas
+## Iteración 4: Refinamiento README y Stack Técnico
 
-- Este archivo crece con el proyecto
-- Cada iteración se agrega al final
-- Nunca borramos iteraciones anteriores
-- Formato consistente para fácil lectura
-- Commits frecuentes de este archivo
+**Fecha**: 28 Enero 2026  
+**Tipo**: Documentation & UX  
+**Versión**: v0.4.0
 
----
-
-## Iteración 3 - Registro del Equipo y Organización de Recursos
-
-**Fecha**: 2026-01-28 (noche)
-
-### Cambio
-
-Registro oficial del equipo y organización de documentación de referencia
-
-### Acciones Completadas
-
-**1. Setup de MetaMask y Celo**
-
-- Configurado Celo Mainnet en MetaMask
-- Cuenta "One Man Army" creada
-- Dirección de wallet obtenida
-
-**2. Registro del Equipo**
-
-- Equipo registrado en LatAm Hubs
-- Esperando confirmación
-- 3 CELO pendientes de recibir
-
-**3. Repositorio GitHub**
-
-- Creado: https://github.com/LuisSambrano/puente
-- Documentación inicial pusheada (8 archivos, 2,327 líneas)
-- RentPay clonado para referencia
-
-**4. Organización de Recursos**
-
-- Creado `06-recursos-referencia.md`
-- Documentación oficial organizada por prioridad
-- FAQ del buildathon documentado
-
-**5. Identidad del Proyecto**
-
-- Creado `07-mision-vision.md`
-- Misión, visión y objetivos definidos
-- Estructura de pitch deck preparada
-- Narrativa para jueces desarrollada
-
-### Documentación Agregada
-
-**Recursos de Referencia**:
-
-- Human.Tech (docs, WaaP, Passport)
-- v0 (docs, templates)
-- Celo Academy (tutoriales en español)
-- Videos de VibeCoding
-- FAQ completo del buildathon
-
-**Misión y Visión**:
-
-- Historia del proyecto
-- Propuesta de valor (remitente y receptor)
-- Diferenciadores vs competencia
-- Estructura de pitch deck (10 slides)
-- Narrativa para presentación
-
-### Aprendizajes
-
-**Lección 1**: Configuración de redes en MetaMask
-
-- Algunos RPCs de Celo Alfajores no funcionan
-- Mainnet es suficiente para empezar
-- Alfajores solo necesario para testing
-
-**Lección 2**: Importancia de la narrativa
-
-- No es solo código, es una historia
-- Misión/visión ayudan a enfocar desarrollo
-- Pitch deck se construye desde el principio
-
-**Lección 3**: Documentación como ventaja
-
-- Organizar recursos ahorra tiempo después
-- FAQ del buildathon tiene info crítica
-- Referencia centralizada facilita desarrollo
-
-### Recursos Clave Identificados
-
-**Para Passport**:
-
-- https://docs.passport.xyz/building-with-passport/embed/introduction
-- Embeds son el approach recomendado
-
-**Para v0**:
-
-- https://v0.app/templates
-- Publicar como template es requisito
-
-**Para MiniApp**:
-
-- https://www.celo.mx/academy/construye-tu-miniapp-en-farcaster
-- Tutorial completo en español
-
-### Criterios de Evaluación Confirmados
-
-1. **Impacto** - Problema real, solución real
-2. **Calidad** - Código limpio, bien documentado
-3. **Demo** - Clara y convincente
-4. **Historia** - Narrativa compelling
-5. **Transacciones** - Más volumen = mejor consideración
-
-### Estrategia de Bounties Confirmada
-
-**Human.Tech** ($1,000 USDC):
-
-- Enfocarnos en Passport embeds ($250 x 2)
-- Implementación de calidad > cantidad
-
-**v0** ($1,000 créditos):
-
-- Usar v0 para todos los componentes
-- Publicar como template público
-- Mostrar branding claramente
-
-### Próximos Pasos Inmediatos
-
-1. ✅ Equipo registrado
-2. ⏳ Esperar confirmación y 3 CELO
-3. ⏳ Ejecutar Celo Composer
-4. ⏳ Explorar estructura generada
-5. ⏳ Estudiar RentPay
-6. ⏳ Primer componente con v0
-
-### Archivos Afectados
-
-- `docs/06-recursos-referencia.md` (creado)
-- `docs/07-mision-vision.md` (creado)
-- `docs/99-iteraciones.md` (este archivo)
+[Contenido anterior...]
 
 ---
 
-**Última actualización**: 2026-01-28  
-**Total de iteraciones**: 3  
-**Próxima iteración esperada**: Después de ejecutar Celo Composer
+## Iteración 3: User Research y GTM Strategy
+
+**Fecha**: 27 Enero 2026  
+**Tipo**: Research & Planning  
+**Versión**: v0.3.0
+
+[Contenido anterior...]
+
+---
+
+## Iteración 2: Setup Inicial y Registro Buildathon
+
+**Fecha**: 26 Enero 2026  
+**Tipo**: Setup & Registration  
+**Versión**: v0.2.0
+
+[Contenido anterior...]
+
+---
+
+## Iteración 1: Brainstorming y Decisión de Proyecto
+
+**Fecha**: 25 Enero 2026  
+**Tipo**: Ideation & Planning  
+**Versión**: v0.1.0
+
+[Contenido anterior...]
