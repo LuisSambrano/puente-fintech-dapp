@@ -1,261 +1,112 @@
-# Misión, Visión y Objetivos - Puente
+# Misión, Visión y Objetivos - Puente (Híbrido)
 
 ## Nuestra Historia
 
-**One Man Army** nace de una realidad: enviar dinero a Venezuela es caro, lento y excluyente.
+**One Man Army** nace de una realidad: enviar dinero a Venezuela es caro, lento y excluyente. Pero la necesidad financiera no termina ahí. La diáspora también necesita **ayudar en emergencias** y **apoyar a creadores**.
 
-Las familias dependen de remesas, pero:
-
-- Western Union cobra 10-15% de comisión
-- Los bancos tardan 3-5 días
-- Muchos no tienen cuenta bancaria
-- Los documentos tradicionales son difíciles de obtener
-
-**Puente** es la respuesta: remesas peer-to-peer usando blockchain, sin intermediarios, sin bancos, sin documentos tradicionales.
+**Puente** evoluciona de ser solo "remesas" a ser la **infraestructura financiera completa** para la diáspora.
 
 ---
 
-## Misión
+## Misión (Actualizada)
 
-**Democratizar el acceso a remesas para Venezuela usando tecnología blockchain.**
+**Unificar la economía fragmentada de la diáspora venezolana en una sola plataforma blockchain simple, barata y sin barreras.**
 
 Específicamente:
 
-- Reducir costos de remesas de 15% a <1%
-- Reducir tiempo de envío de días a minutos
-- Eliminar requisito de cuenta bancaria
-- Permitir verificación de identidad sin documentos tradicionales
+1. **Remesas**: Costo <1% (vs 15%).
+2. **Crowdfunding**: Comisiones justas (2% vs 5-10%).
+3. **Donaciones**: Apoyo directo a creadores (1% vs 10%).
 
 ---
 
-## Visión
+## Visión 2027
 
-**Ser la plataforma de remesas peer-to-peer más usada para Venezuela en 2026.**
+**Ser el "Super-App" financiero de referencia para los 8 millones de venezolanos en el exterior.**
 
 Medido por:
 
-- 1,000+ usuarios activos
-- $100,000+ en volumen de remesas
-- 10,000+ transacciones en Celo Mainnet
-- Integración con servicios de cambio a bolívares
+- **Adopción**: 100,000+ usuarios activos.
+- **Volumen**: $1M+ mensual en transacciones mixtas.
+- **Impacto**: 500+ campañas de salud financiadas exitosamente.
 
 ---
 
-## Objetivos del Buildathon
+## Objetivos del Buildathon (Fase 1: MVP Remesas)
 
 ### Objetivo Principal
 
-Construir un MVP funcional de Puente que:
+Construir un **MVP sólido** enfocado 100% en el caso de uso más frecuente: **Remesas**.
 
-1. Permita enviar cUSD de USA a Venezuela
-2. Verifique identidad con Passport
-3. Funcione en MiniPay
-4. Genere transacciones reales en Mainnet
+1. **Enviar/Recibir**: Flujo UX perfecto (menos de 3 clicks).
+2. **Identidad**: Integración de Passport para verificar humanidad.
+3. **Onboarding**: Login con Email (Privy) funcional.
+4. **Mainnet**: Transacciones reales en Celo.
 
 ### Objetivos Secundarios
 
-1. **Ganar MiniApps Track** (3,000 CELO)
-2. **Ganar Human.Tech Bounty** ($250 USDC)
-3. **Ganar v0 Bounty** ($500 créditos)
-4. **Documentar proceso completo** (VibeCoding)
+1. **Ganar MiniApps Track** (3,000 CELO).
+2. **Ganar Bounties** (Human.Tech + v0).
+3. **VibeCoding**: Documentar el pivote hacia el modelo híbrido.
 
 ---
 
-## Valores del Proyecto
+## Propuesta de Valor Híbrida
 
-### 1. Transparencia
+### Para el Remitente (Fase 1)
 
-- Documentar TODO el proceso
-- Mostrar errores y aprendizajes
-- Código abierto
+- **Ahorro Masivo**: Envía $100, llegan $99.99 (vs $85 con Western Union).
+- **Simplicidad**: "Es como Zelle".
 
-### 2. Impacto Real
+### Para la Comunidad (Fase 2)
 
-- Resolver un problema real
-- Usuarios reales desde día 1
-- Métricas de uso verificables
+- **Crowdfunding de Salud**: "GoFundMe es imposible de retirar en Venezuela". Puente lo hace directo a wallet.
+- **Transparencia**: Blockchain garantiza que los fondos llegan al destino.
 
-### 3. Simplicidad
+### Para Creadores (Fase 3)
 
-- UI intuitiva
-- Proceso de envío en 3 pasos
-- Sin jerga técnica para usuarios
-
-### 4. Inclusión
-
-- Sin requisito de banco
-- Sin documentos tradicionales
-- Accesible desde el teléfono
+- **Cafecito sin Fronteras**: Recibe micro-donaciones de cualquier país sin perder 10% en fees.
 
 ---
 
-## Propuesta de Valor
+## Diferenciadores Competitivos
 
-### Para el Remitente (ej: familiar en USA)
-
-- **Ahorro**: Comisión <1% vs 15% tradicional
-- **Velocidad**: Minutos vs días
-- **Confianza**: Receptor verificado con Passport
-
-### Para el Receptor (ej: persona en Venezuela)
-
-- **Acceso**: Sin cuenta bancaria necesaria
-- **Identidad**: Verificación sin documentos
-- **Flexibilidad**: Usar cUSD o convertir a bolívares
-
-### Para el Ecosistema
-
-- **Transacciones**: Volumen real en Celo Mainnet
-- **Adopción**: Caso de uso concreto de blockchain
-- **Ejemplo**: Referencia para otros proyectos
+| Competidor        | Modelo            | Debilidad        | Nuestra Solución        |
+| ----------------- | ----------------- | ---------------- | ----------------------- |
+| **Western Union** | Tradicional       | Caro (15%)       | **Blockchain (<1%)**    |
+| **GoFundMe**      | Web2 Crowdfunding | Retiro difícil   | **Crypto Directo**      |
+| **Cafecito**      | Web2 Donaciones   | Fees altos (10%) | **Smart Contract (1%)** |
+| **ElDorado**      | P2P Crypto        | UX Compleja      | **Privy + MiniPay**     |
 
 ---
 
-## Diferenciadores
+## Métricas de Éxito Actualizadas
 
-### vs Western Union / MoneyGram
+### Buildathon (MVP)
 
-- ✅ Comisiones 15x más bajas
-- ✅ 1000x más rápido (minutos vs días)
-- ✅ Sin oficinas físicas necesarias
+- [ ] 50+ transacciones P2P reales.
+- [ ] 10+ usuarios verificados con Passport.
+- [ ] Video demo mostrando "Remesas" (Fase 1).
 
-### vs Otras Crypto Remittances
+### Post-Buildathon (Q2 2026)
 
-- ✅ Verificación de identidad (previene fraude)
-- ✅ UI móvil-first (MiniPay)
-- ✅ Enfoque específico en Venezuela
-
-### vs Enviar Crypto Directamente
-
-- ✅ Receptor verificado (confianza)
-- ✅ Historial de transacciones
-- ✅ Soporte/ayuda disponible
+- [ ] Lanzamiento de módulo **Crowdfunding**.
+- [ ] Lanzamiento de módulo **Donaciones**.
+- [ ] $10k+ volumen mensual.
 
 ---
 
-## Métricas de Éxito
+## Pitch Deck Storyline
 
-### Buildathon (Feb 27)
-
-- [ ] MVP funcional en Mainnet
-- [ ] 50+ transacciones reales
-- [ ] 10+ usuarios verificados con Passport
-- [ ] Video demo profesional
-- [ ] Documentación completa
-
-### Post-Buildathon (Mar-Jun)
-
-- [ ] 100+ usuarios activos
-- [ ] $10,000+ en volumen
-- [ ] Integración con exchange local
-- [ ] App móvil nativa (opcional)
+1. **El Problema**: La diáspora venezolana pierde 15% de su dinero en fees (remesas, ayudas, donaciones).
+2. **La Solución Fragmentada**: Usan Western Union (remesas), GoFundMe (ayudas) y Cafecito (donaciones). 3 apps, 3 comisiones altas.
+3. **La Solución Puente**: **3 Productos en 1**. Una sola identidad (Passport), una sola wallet (Celo), fees mínimos.
+4. **El MVP (Hoy)**: Empezamos por lo más grande: Remesas.
+5. **El Futuro**: Neo-banco completo.
 
 ---
 
-## Pitch Deck - Estructura
+## Valores VibeCoding
 
-### Slide 1: Problema
-
-**Enviar dinero a Venezuela es caro y excluyente**
-
-- 15% de comisión
-- 3-5 días de espera
-- Requiere banco y documentos
-
-### Slide 2: Solución
-
-**Puente: Remesas P2P con blockchain**
-
-- <1% comisión
-- Minutos, no días
-- Sin banco, sin documentos
-
-### Slide 3: Cómo Funciona
-
-1. Remitente envía cUSD
-2. Receptor verifica identidad (Passport)
-3. Fondos disponibles en minutos
-
-### Slide 4: Tecnología
-
-- Celo Mainnet (blockchain móvil-first)
-- MiniPay (wallet accesible)
-- Human.Tech Passport (identidad)
-- v0 (UI rápida)
-
-### Slide 5: Mercado
-
-- 4M+ venezolanos en el exterior
-- $4B+ en remesas anuales
-- 70% sin cuenta bancaria
-
-### Slide 6: Tracción
-
-- X transacciones en Mainnet
-- X usuarios verificados
-- $X en volumen
-
-### Slide 7: Equipo
-
-- One Man Army
-- Construido en 5 semanas
-- Proceso documentado (VibeCoding)
-
-### Slide 8: Roadmap
-
-- Q1 2026: MVP (buildathon)
-- Q2 2026: 100 usuarios
-- Q3 2026: Integración exchange
-- Q4 2026: App nativa
-
-### Slide 9: Ask
-
-- Feedback de usuarios
-- Conexiones con exchanges
-- Difusión en comunidad venezolana
-
-### Slide 10: Contacto
-
-- GitHub: github.com/LuisSambrano/puente
-- Demo: [URL]
-- Email: [email]
-
----
-
-## Narrativa del Proyecto
-
-**Para jueces del buildathon**:
-
-"Puente nace de una realidad: mi familia en Venezuela depende de remesas, pero los servicios tradicionales cobran 15% y tardan días.
-
-Con Celo y MiniPay, podemos reducir eso a <1% y minutos. Con Passport, podemos verificar identidad sin documentos que muchos no tienen.
-
-Este no es un proyecto de juguete. Es una solución real a un problema real que afecta a millones.
-
-En 5 semanas, sin experiencia previa en Celo, construimos un MVP funcional. Documentamos TODO el proceso para VibeCoding: errores, aprendizajes, decisiones.
-
-Puente demuestra que blockchain puede resolver problemas reales, hoy, para personas reales."
-
----
-
-## Próximos Pasos
-
-1. **Validar con usuarios reales**
-   - Contactar venezolanos en el exterior
-   - Obtener feedback temprano
-   - Ajustar según necesidad
-
-2. **Construir comunidad**
-   - Grupo de Telegram/WhatsApp
-   - Compartir progreso
-   - Invitar a probar
-
-3. **Preparar lanzamiento**
-   - Video demo impactante
-   - Pitch deck profesional
-   - Métricas verificables
-
----
-
-**Última actualización**: 2026-01-28  
-**Estado**: En construcción
+- **Transparencia Radical**: Admitimos que no podemos construir los 3 módulos en el buildathon. Priorizamos Remesas.
+- **Construir en Público**: Mostramos el código, los errores y el roadmap real.

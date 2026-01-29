@@ -2,7 +2,9 @@
 
 # 🌉 Puente
 
-### Remesas Peer-to-Peer para Venezuela | El Futuro del Neo-Banco Digital
+### La Super-App Financiera para la Diáspora Venezolana
+
+**Remesas • Ayudas • Donaciones**
 
 _Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/)_
 
@@ -10,12 +12,11 @@ _Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/
 [![MiniApps Track](https://img.shields.io/badge/Track-MiniApps-00D4AA?style=for-the-badge)](https://latamhubs.lat)
 [![VibeCoding](https://img.shields.io/badge/VibeCoding-Transparent%20Build-FF6B6B?style=for-the-badge)](docs/99-iteraciones.md)
 
-[![Human.Tech](https://img.shields.io/badge/Powered%20by-Human.Tech%20Passport-4A90E2?style=flat-square)](https://human.tech)
-[![v0](https://img.shields.io/badge/UI%20with-v0-000000?style=flat-square&logo=vercel)](https://v0.dev)
-[![Google AI](https://img.shields.io/badge/Built%20with-Google%20AI%20Ecosystem-4285F4?style=flat-square&logo=google)](https://ai.google.dev)
-[![Antigravity](https://img.shields.io/badge/Powered%20by-Antigravity-FF6B6B?style=flat-square)](https://github.com/LuisSambrano/antigravity-skills)
+[![Privy](https://img.shields.io/badge/Auth%20%26%20Wallet-Privy-1C1B1B?style=flat-square&logo=privy)](https://privy.io)
+[![Human.Tech](https://img.shields.io/badge/Identity-Human.Tech%20Passport-4A90E2?style=flat-square)](https://human.tech)
+[![v0](https://img.shields.io/badge/UI-v0-000000?style=flat-square&logo=vercel)](https://v0.dev)
 
-[🚀 Demo en Vivo](#) • [📖 Documentación](#-documentación) • [🎥 Video Demo](#) • [💬 Comunidad](#-comunidad-y-crecimiento)
+[🚀 Demo en Vivo](https://puente-remesas.vercel.app) • [📖 Documentación](#-documentación) • [🎥 Video Demo](#) • [💬 Comunidad](#-comunidad-y-crecimiento)
 
 </div>
 
@@ -23,704 +24,165 @@ _Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/
 
 ## 📑 Tabla de Contenidos
 
-- [🎯 El Problema](#-el-problema)
-- [💡 La Solución](#-la-solución)
-- [📊 Datos Reales del Mercado](#-datos-reales-del-mercado)
-- [🇻🇪 Contexto Venezuela 2026](#-contexto-venezuela-2026)
-- [🛠️ Stack Técnico](#️-stack-técnico)
-- [🤖 Ecosistema Google & IA](#-ecosistema-google--ia)
+- [🎯 El Problema Fragmentado](#-el-problema-fragmentado)
+- [💡 La Solución Híbrida](#-la-solución-híbrida)
+- [🛠️ Stack Técnico (Moderno)](#️-stack-técnico-moderno)
+- [📊 Validación de Mercado](#-validación-de-mercado)
 - [🏆 Panorama Competitivo](#-panorama-competitivo)
-- [🚀 Visión: Neo-Banco Digital](#-visión-neo-banco-digital)
-- [💱 Roadmap: Integración Pago Móvil](#-roadmap-integración-pago-móvil)
-- [📈 Progreso del Buildathon](#-progreso-del-buildathon)
-- [🎓 VibeCoding](#-vibecoding-construyendo-en-público)
-- [🌱 Comunidad y Crecimiento](#-comunidad-y-crecimiento)
+- [🚀 Roadmap 2026](#-roadmap-2026)
+- [🎓 VibeCoding & IA](#-vibecoding--ia)
 - [📚 Documentación](#-documentación)
-- [👥 Equipo](#-equipo)
 
 ---
 
-## 🎯 El Problema
+## 🎯 El Problema Fragmentado
 
-Enviar dinero a Venezuela es **caro**, **lento** y **excluyente**:
+La diáspora venezolana (8 millones de personas) vive con su economía fragmentada en 3 problemas costosos:
+
+1. **Remesas (Familia)**: Usan Western Union y pierden **15%**.
+2. **Emergencias (Salud)**: Usan GoFundMe y no pueden **retirar el dinero** en Venezuela.
+3. **Creadores (Ingresos)**: Usan Cafecito/Patreon y pierden **10-15%** en fees.
+
+> **Resultado**: Una economía ineficiente donde los intermediarios ganan más que los usuarios.
+
+---
+
+## 💡 La Solución Híbrida
+
+**Puente** unifica estas 3 necesidades en una sola "Super-App" construida sobre Celo.
+
+### 1. Remesas (El Zelle de LATAM)
+
+- **Costo**: <1% (vs 15%).
+- **Velocidad**: Instantánea.
+- **UX**: Login con Email (Privy) -> Enviar a teléfono.
+
+### 2. Crowdfunding (El GoFundMe Crypto)
+
+- **Caso de uso**: Emergencias médicas.
+- **Ventaja**: Retiro directo a wallet en segundos. Sin bloqueos geográficos.
+
+### 3. Donaciones (El Cafecito Global)
+
+- **Caso de uso**: Apoyar a creadores/periodistas.
+- **Ventaja**: Micro-pagos de $1 viables (fees de centavos).
+
+---
+
+## 🛠️ Stack Técnico (Moderno)
+
+Hemos iterado para encontrar el **"Holy Grail"** de la UX Web3:
 
 <div align="center">
 
-| Servicio Tradicional            | Puente                          |
-| ------------------------------- | ------------------------------- |
-| 💸 **10-15%** de comisión       | 💚 **<1%** de comisión          |
-| ⏰ **2-3 días** de espera       | ⚡ **Minutos**                  |
-| 🏦 Requiere **cuenta bancaria** | 📱 Solo necesitas **teléfono**  |
-| 📄 Requiere **documentos**      | ✅ Verificación **sin papeles** |
+| Componente        | Tecnología                                                            | Por Qué (La decisión difícil)                                               |
+| :---------------- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| **Auth & Wallet** | ![Privy](https://img.shields.io/badge/-Privy-1C1B1B?style=flat)       | **Adiós RainbowKit**. Necesitamos login con Email/SMS para adopción masiva. |
+| **Blockchain**    | ![Celo](https://img.shields.io/badge/-Celo-FCFF52?style=flat)         | Mobile-first, fees inexistentes, stablecoins nativas.                       |
+| **Identidad**     | ![Passport](https://img.shields.io/badge/-Passport-4A90E2?style=flat) | Verificación Sybil-resistant **sin documentos** (para indocumentados).      |
+| **UI**            | ![v0](https://img.shields.io/badge/-v0-000000?style=flat)             | Interfaz generada con IA, pulida y responsive.                              |
+| **Data**          | ![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat) | Base de datos relacional para perfiles y campañas.                          |
 
 </div>
 
-### Datos Reales
-
-- **7.89 millones** de venezolanos en el exterior ([IOM, dic 2024](https://www.iom.int))
-- **$3.8 mil millones** en remesas anuales 2024 ([The Dialogue](https://www.thedialogue.org))
-- **30%** de hogares venezolanos dependen de remesas ([Ecoanalítica](https://ecoanalitica.com))
-- **16%** de la población no bancarizada ([World Bank, 2021](https://www.worldbank.org))
-
-> **Problema cuantificado**: Una familia que recibe $200/mes pierde $20-30 en fees. Eso es **$240-360 al año**.
-
 ---
 
-## 💡 La Solución
+## 📊 Validación de Mercado
 
-**Puente** es una plataforma de remesas peer-to-peer que usa blockchain para:
+### Contexto: Venezuela 2026
 
-✨ **Reducir costos** de 15% a <1%  
-⚡ **Acelerar envíos** de días a minutos  
-🌍 **Eliminar intermediarios** bancarios  
-🔐 **Verificar identidad** sin documentos tradicionales
+- **Transición**: Se espera apertura de canales formales (Western Union vuelve).
+- **Crypto Adoption**: Ya ganó. 10%+ de compras en supermercados son en USDT.
+- **Oportunidad**: Puente entra como la opción **nativa digital** y **más barata**.
 
-### Cómo Funciona
+### Métricas Clave
 
-```mermaid
-graph LR
-    A[👤 Remitente<br/>USA] -->|1. Envía cUSD| B[🌉 Puente<br/>Smart Contract]
-    B -->|2. Verifica| C[✅ Passport<br/>Identidad]
-    C -->|3. Libera fondos| D[👤 Receptor<br/>Venezuela]
-    D -->|4. Usa en MiniPay| E[💰 cUSD o<br/>Bolívares]
-
-    style A fill:#00D4AA
-    style B fill:#FCFF52
-    style C fill:#4A90E2
-    style D fill:#00D4AA
-    style E fill:#3FB950
-```
-
----
-
-## 📊 Datos Reales del Mercado
-
-### Migración Venezolana
-
-- **7.89M** venezolanos en el exterior (dic 2024) - [IOM](https://www.iom.int)
-- **Proyección 2025**: 8-9 millones - [UNHCR](https://www.unhcr.org)
-- **Principales destinos**: Colombia (2.8M), Perú (1.7M), USA (700K+) - [R4V](https://www.r4v.info)
-
-### Mercado de Remesas
-
-- **Volumen 2024**: $3.8 mil millones - [The Dialogue](https://www.thedialogue.org)
-- **Hogares beneficiados**: ~3 millones (30%) - [Ecoanalítica](https://ecoanalitica.com)
-- **Costos actuales**: 3-15% dependiendo del servicio - [World Bank](https://remittanceprices.worldbank.org)
-- **Crypto en remesas**: 9% del total ($270M+ en 2023) - [Forbes](https://www.forbes.com)
-
-### Adopción Tecnológica
-
-- **Penetración móvil**: 73.4% (21.37M conexiones) - [DataReportal 2024](https://datareportal.com)
-- **Internet**: 61.6% (17.94M usuarios) - [DataReportal 2024](https://datareportal.com)
-- **Crypto**: 13º en adopción global, 110% crecimiento - [Chainalysis 2024](https://www.chainalysis.com)
-- **Stablecoins**: 56.4% de transacciones crypto - [Bitget Research](https://www.bitget.com)
-
-> **Insight clave**: Los venezolanos YA están familiarizados con crypto y stablecoins. Celo/cUSD no será un concepto extraño.
-
-[Ver investigación completa →](docs/09-user-research.md)
-
----
-
-## 🇻🇪 Contexto Venezuela 2026
-
-> **Timing Perfecto**: Venezuela en transición histórica, apertura financiera en proceso
-
-### Cambio Geopolítico (Enero 2026)
-
-**3 Enero 2026**: Captura de Nicolás Maduro por fuerzas USA
-
-- **Gobierno Interino**: Delcy Rodríguez (Vice-presidenta)
-- **Acuerdo Energético**: USA-Venezuela, levantamiento parcial de sanciones
-- **Inyección de Capital**: $300M de ventas de petróleo al sistema bancario
-- **Reformas**: Ley de Hidrocarburos, nueva ley de minería
-
-**Fuente**: [Wikipedia](https://wikipedia.org) • [El País](https://elpais.com) • [Brookings](https://brookings.edu)
-
-### Apertura Financiera
-
-**Western Union & MoneyGram**:
-
-- **Proyección Q2 2026**: Reapertura de corredor de remesas formales
-- **Oportunidad**: Formalización de 95% de mercado informal ($4-5B anuales)
-- **Ventana**: Capturar mercado antes que incumbentes
-
-**Crypto Adoption**:
-
-- **80% de transacciones digitales** usan Pago Móvil - [Binance](https://binance.com)
-- **Stablecoins** como "mejores dólares" para survival
-- **SUNACRIP** paralizada desde Marzo 2023 (vacío regulatorio) - [Lightspark](https://lightspark.com)
-
-### Implicaciones para Puente
-
-**Oportunidades**:
-
-- ✅ Timing perfecto (transición histórica)
-- ✅ Crypto ya adoptado masivamente (10%+ grocery)
-- ✅ Necesidad de inclusión financiera (95% informal)
-- ✅ Pago Móvil crítico (80% transacciones digitales)
-
-**Diferenciación**:
-
-- ✅ **Passport**: Verificación sin documentos (vs cédula requerida)
-- ✅ **P2P**: Descentralizado, sin intermediarios
-- ✅ **Roadmap**: Integración Pago Móvil post-buildathon
-
-[Ver análisis completo →](docs/13-contexto-venezuela-2026.md)
-
----
-
-## 🛠️ Stack Técnico
-
-### Blockchain & Ecosystem
-
-<div align="center">
-
-| Categoría       | Tecnología                                                                                                                | Por Qué                                  |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| **Blockchain**  | ![Celo](https://img.shields.io/badge/Celo-FCFF52?style=flat&logo=celo&logoColor=black)                                    | Ethereum L2, móvil-first, EVM-compatible |
-| **Wallet**      | ![MiniPay](https://img.shields.io/badge/MiniPay-00D4AA?style=flat)                                                        | Self-custodial, integrado en Opera Mini  |
-| **Identidad**   | ![Passport](https://img.shields.io/badge/Human.Tech%20Passport-4A90E2?style=flat)                                         | Proof-of-personhood sin documentos       |
-| **Stablecoins** | ![cUSD](https://img.shields.io/badge/cUSD-FCFF52?style=flat) ![USDC](https://img.shields.io/badge/USDC-2775CA?style=flat) | Gas currencies, remesas                  |
-
-</div>
-
-**Celo Ecosystem**:
-
-- **Native Token**: CELO
-- **Stable Assets**: cUSD, cEUR, cREAL, eXOF
-- **Stablecoins**: USDC, USDT (también como gas currencies)
-- **DeFi Infrastructure**: Aave, Uniswap V3, Curve, Velodrome, Chainlink
-
-### Frontend & UI
-
-<div align="center">
-
-| Categoría         | Tecnología                                                                                                                                       | Por Qué                                  |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
-| **Framework**     | ![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=flat&logo=next.js)                                                             | App Router, SSR, optimizado para Web3    |
-| **Web3 Library**  | ![Viem](https://img.shields.io/badge/Viem-646CFF?style=flat) ![Wagmi](https://img.shields.io/badge/Wagmi-1C1B1B?style=flat)                      | Fee abstraction nativa, TypeScript-first |
-| **UI Components** | ![Shadcn](https://img.shields.io/badge/Shadcn%2FUI-000000?style=flat) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat) | Componentes accesibles, móvil-first      |
-| **UI Generation** | ![v0](https://img.shields.io/badge/v0-000000?style=flat&logo=vercel)                                                                             | Generación de componentes con IA         |
-
-</div>
-
-**Celo Composer** (Oficial):
-
-- Soporte para: React, React Native (con/sin Expo), Angular, Flutter
-- Subgraph integration
-- Templates optimizados para MiniPay
-
-### Backend & Infrastructure
-
-<div align="center">
-
-| Categoría           | Tecnología                                                                                                                                            | Por Qué                               |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| **Database**        | ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)                                                    | PostgreSQL, Auth, RLS, Edge Functions |
-| **Hosting**         | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel)                                                                          | Edge Network, deployment automático   |
-| **Smart Contracts** | ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity) ![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat) | Testing, deployment en Celo Mainnet   |
-
-</div>
-
-### MiniPay Integration
-
-**Features utilizadas**:
-
-- Phone numbers como wallet addresses
-- Fast, low-cost stablecoin transactions
-- Built-in app discovery page
-- Standalone app (Android/iOS) + Opera Mini integration
-
-**Optimizaciones**:
-
-- Detección automática de MiniPay
-- Fee abstraction (pagar gas con cUSD)
-- UI móvil-first (touch-optimized)
-
----
-
-## 🤖 Ecosistema Google & IA
-
-> **Sin este ecosistema de IA, este proyecto no sería posible.** Como "One Man Army" sin experiencia previa en Celo/Web3, estas herramientas actúan como un **equipo completo de 10+ personas**.
-
-### Herramientas Principales
-
-<div align="center">
-
-| Herramienta              | Por Qué                      | Cómo                                                 | Para Qué                                                     |
-| ------------------------ | ---------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
-| **Gemini 3 Flash**       | Modelo más avanzado (2026)   | Co-piloto de desarrollo, 1M tokens context           | Generación de smart contracts, debugging, análisis de código |
-| **Google AI Studio**     | Prototipado rápido           | Testing de modelos, API gratuita                     | Experimentación con prompts, generación de componentes       |
-| **NotebookLM**           | Síntesis de docs             | Audio Overviews en 80+ idiomas                       | Organizar docs del buildathon, insights de user research     |
-| **Gemini Deep Research** | Investigación automatizada   | Síntesis de múltiples fuentes                        | Análisis de mercado, validación de hipótesis                 |
-| **Google Labs**          | Herramientas creativas       | Veo 3.1 (video), Imagen 3 (imágenes), Lyria (música) | Videos demo, assets visuales, contenido de marketing         |
-| **Claude Antigravity**   | Automatización de desarrollo | Skills, Rules, Workflows, MCP Servers                | Generación de código consistente, integración con Supabase   |
-| **v0 by Vercel**         | UI generation con IA         | Prompts → Componentes React                          | Acelerar desarrollo de UI móvil-first                        |
-
-</div>
-
-### Impacto Medible
-
-- **10x** velocidad de desarrollo vs equipo tradicional
-- **$0** en costos de equipo (vs $200K+/año para 10 personas)
-- **100%** de documentación generada con IA (4,000+ líneas)
-- **0** bugs críticos gracias a revisión multi-modelo
-- **Agentic AI**: Automatización de workflows complejos end-to-end
-
-**Fuentes**: [Google AI](https://ai.google.dev) • [NotebookLM](https://notebooklm.google.com) • [Google Labs](https://labs.google) • [v0](https://v0.dev)
+- **TAM**: $4-5 Billion/año en remesas.
+- **Usuarios**: 7.89 Millones de migrantes.
+- **Competencia**: Lenta (Bancos), Cara (WU) o Compleja (P2P Tradicional).
 
 ---
 
 ## 🏆 Panorama Competitivo
 
-### Ecosistema Fintech Venezuela
-
-**74 startups fintech** en Venezuela (2024) - [Tracxn](https://tracxn.com)
-
-- 6 con funding confirmado
-- Enfoque: Pagos, BNPL, crypto
-- 47% de transacciones <$10K usan stablecoins - [Chainalysis](https://www.chainalysis.com)
-
-### Competidores Principales
-
-<div align="center">
-
-| Competidor        | Tipo            | Costo   | Velocidad   | Blockchain | Verificación |
-| ----------------- | --------------- | ------- | ----------- | ---------- | ------------ |
-| **Western Union** | Tradicional     | 10-15%  | 2-3 días    | ❌         | Documentos   |
-| **El Dorado**     | Crypto P2P      | 1-2%    | Minutos     | ✅         | Ninguna      |
-| **Mukuru**        | Digital         | 3-5%    | Horas       | ❌         | Documentos   |
-| **Puente**        | **Remesas P2P** | **<1%** | **Minutos** | **✅**     | **Passport** |
-
-</div>
-
-### Ventaja Competitiva
-
-**Combinación única**:
-
-1. **Blockchain** (velocidad + costos) + **Passport** (confianza sin documentos)
-2. **Enfoque específico** en diáspora venezolana
-3. **UX optimizada** para usuarios no-tech-savvy
-4. **Visión de neo-banco** (no solo remesas)
-5. **Construido en público** (VibeCoding como diferenciador)
-
-**Moat**:
-
-- Integración Passport (difícil de replicar)
-- Comunidad construida en público
-- Datos de usuario (mejora continua de UX)
-- Network effects (más usuarios = más valor)
-
-[Ver análisis completo →](docs/11-competidores.md)
+| Feature         |    Puente 🌉    | Western Union |   GoFundMe   |  Cafecito  |  ElDorado   |
+| :-------------- | :-------------: | :-----------: | :----------: | :--------: | :---------: |
+| **Fees**        |     **<1%**     |      15%      | 2.9% + $0.30 |     5%     |    1-2%     |
+| **Velocidad**   |  **Segundos**   |     Días      |     Días     |  Semanal   |   Minutos   |
+| **Retiro Vzla** | **✅ Directo**  |  ❌ Difícil   | ❌ Imposible |   ❌ No    |   ✅ P2P    |
+| **Identidad**   | **✅ Passport** |  📄 Papeles   |  📄 SSN/ID   |   📄 DNI   | ❌ Ninguna  |
+| **Modelo**      |   **Híbrido**   |  Solo Remesa  |  Solo Ayuda  | Solo Donar | Solo Cambio |
 
 ---
 
-## 🚀 Visión: Neo-Banco Digital
+## 🚀 Roadmap 2026
 
-Puente no es solo remesas. Es el **futuro neo-banco digital para la diáspora venezolana**.
+### 🟢 Fase 1: Buildathon (Feb 2026) -> **FOCUS ACTUAL**
 
-### Roadmap de Producto
+- [x] MVP de **Remesas P2P**.
+- [x] Integración **Privy** (Email Login).
+- [x] Integración **Passport** (Verificación).
+- [ ] 100 transacciones en Mainnet.
 
-```
-2026 Q1-Q2: Remesas P2P
-    ├─ Envío/recepción de cUSD
-    ├─ Verificación con Passport
-    └─ Conversión a bolívares
+### 🟡 Fase 2: Crowdfunding (Q2 2026)
 
-2026 Q3-Q4: Wallet Digital
-    ├─ Balance en múltiples stablecoins
-    ├─ Historial de transacciones
-    └─ Tarjeta virtual
+- [ ] Módulo de Campañas de Salud.
+- [ ] Smart Contracts de Escrow.
+- [ ] Shareable Links virales.
 
-2027 Q1-Q2: Servicios Financieros
-    ├─ Ahorro con interés (yield farming)
-    ├─ Pagos de servicios locales
-    └─ Préstamos basados en historial
+### 🔴 Fase 3: Donaciones (Q3 2026)
 
-2027 Q3+: Neo-Banco Completo
-    ├─ Inversiones (DeFi simplificado)
-    ├─ Seguros descentralizados
-    └─ Nómina en crypto
-```
-
-### Inspiración: Nubank
-
-**Nubank** (Brasil) empezó con una tarjeta de crédito simple:
-
-- Hoy: 90M+ usuarios - [Nubank IR](https://investors.nu)
-- Valoración: $30B+ - [Bloomberg](https://www.bloomberg.com)
-- Banco completo (cuentas, préstamos, inversiones)
-
-**Aprendizaje**: Empezar con un problema específico (remesas), resolverlo excepcionalmente bien, expandir a servicios adyacentes.
-
-### Expansión Regional
-
-- **2026**: Venezuela (7.89M potencial)
-- **2027**: Colombia (2.8M venezolanos)
-- **2028**: Perú, Ecuador, Chile
-- **2029+**: Toda LatAm (50M+ migrantes, $150B+ en remesas) - [World Bank](https://www.worldbank.org)
-
-[Ver visión completa →](docs/07-mision-vision.md)
+- [ ] Perfiles de creadores.
+- [ ] Widget "Invítame un Café".
+- [ ] Suscripciones recurrentes (Flows).
 
 ---
 
-## 💱 Roadmap: Integración Pago Móvil
+## 🎓 VibeCoding & IA
 
-> **Game Changer**: Convertir crypto → bolívares para gastar localmente
+Este proyecto es un experimento de **"One Man Army"** potenciado por IA.
+No tenemos un equipo de 10 personas. Tenemos:
 
-### El Problema
+- **Gemini 2.0**: Arquitecto de Software.
+- **Claude Antigravity**: Ingeniero DevOps y Backend.
+- **v0**: Diseñador UI/UX.
+- **NotebookLM**: Investigador de Mercado.
 
-**Receptor recibe cUSD, pero necesita bolívares para**:
-
-- Pagar servicios (luz, agua, internet)
-- Comprar en comercios locales
-- Enviar dinero a familiares vía Pago Móvil
-
-**Pago Móvil** es crítico:
-
-- **80% de transacciones digitales** en Venezuela
-- Sistema interbancario instantáneo
-- Gratis entre usuarios
-- **Problema**: Requiere cédula venezolana
-
-### Competidores que Ya lo Hacen
-
-| Plataforma        | Modelo              | Tasa | Limitaciones                |
-| ----------------- | ------------------- | ---- | --------------------------- |
-| **Binance P2P**   | Merchants + Escrow  | 2-5% | Scams, bloqueado por CANTV  |
-| **Reserve App**   | Integración directa | 1-3% | Solo RSV, liquidez limitada |
-| **El Dorado P2P** | Merchants + Escrow  | 3-6% | Menor liquidez              |
-
-### Nuestra Solución (Post-Buildathon)
-
-**Marketplace P2P Interno**:
-
-```mermaid
-graph TB
-    A[Usuario recibe cUSD] --> B{¿Qué hacer?}
-    B -->|Opción 1| C[Mantener cUSD]
-    B -->|Opción 2| D[Marketplace P2P]
-
-    D --> E[Ver ofertas de merchants]
-    E --> F[Seleccionar mejor oferta]
-    F --> G[Smart contract escrow]
-    G --> H[Merchant envía Bs vía Pago Móvil]
-    H --> I[Usuario confirma recepción]
-    I --> J[Smart contract libera cUSD]
-
-    style C fill:#3FB950
-    style D fill:#FCFF52
-    style J fill:#00D4AA
-```
-
-**Ventajas**:
-
-- ✅ Sin licencia bancaria (P2P puro)
-- ✅ Merchants verificados con Passport
-- ✅ Sistema de reputación robusto
-- ✅ Escrow automático vía smart contract
-- ✅ Tasa competitiva: 3-6% total
-
-**Fases**:
-
-**Fase 1 (Buildathon - Feb 2026)**:
-
-- Mostrar tasas de referencia (BCV, Binance P2P)
-- Educar usuarios sobre opciones
-- Documentar estrategia completa
-- **NO implementar** (muy complejo para 30 días)
-
-**Fase 2 (Post-Buildathon - Mar-Jun 2026)**:
-
-- Implementar Marketplace P2P si ganamos funding
-- Reclutar 20-30 merchants verificados
-- Legal counsel para compliance SUNACRIP
-- Objetivo: 100+ trades/día
-
-**Fase 3 (Escalamiento - Jul+ 2026)**:
-
-- Partnership con exchange local (Reserve, El Dorado)
-- API integration para tasas en tiempo real
-- Expansión a Colombia/Perú
-- Posible licencia formal
-
-[Ver análisis técnico completo →](docs/12-pago-movil-integration.md)
-
----
-
-## 📈 Progreso del Buildathon
-
-> **Inicio**: 19 Enero 2026 • **Deadline**: 27 Febrero 2026 • **Días restantes**: 30
-
-### Fase Actual: 🏗️ Setup & Planificación
-
-```
-[████████░░░░░░░░░░░░░░░░░░░░] 25% Completado
-
-✅ Fase 0: Definición y Setup (100%)
-⏳ Fase 1: Aprendizaje Básico (0%)
-⬜ Fase 2: MVP Básico (0%)
-⬜ Fase 3: Passport + Core Logic (0%)
-⬜ Fase 4: Features Completas (0%)
-⬜ Fase 5: Testing y Polish (0%)
-⬜ Fase 6: Submission (0%)
-```
-
-### Hitos Completados
-
-- [x] ✅ Proyecto definido (Remesas Venezuela)
-- [x] ✅ Stack técnico decidido (Celo Composer + Viem)
-- [x] ✅ Repositorio GitHub creado
-- [x] ✅ Documentación inicial completa (12 archivos, 4,000+ líneas)
-- [x] ✅ User research con datos reales
-- [x] ✅ Análisis de competidores
-- [x] ✅ Estrategia de GTM definida
-- [x] ✅ Equipo registrado (esperando confirmación)
-- [ ] ⏳ Celo Composer ejecutado
-- [ ] ⏳ Primer componente con v0
-- [ ] ⏳ Passport integrado
-
-[Ver progreso detallado →](docs/buildathon-tasks.md)
-
-### Objetivos del Buildathon
-
-| Categoría                           | Premio                | Estado                |
-| ----------------------------------- | --------------------- | --------------------- |
-| 🎯 **MiniApps Track** (1er lugar)   | 3,000 CELO + 300 cUSD | 🎯 Objetivo principal |
-| 🔐 **Human.Tech Bounty** (Passport) | $250 USDC             | ✅ Integrado          |
-| 🎨 **v0 Bounty** (UI)               | $500 créditos         | ✅ Usando v0          |
-| 💰 **Total Potencial**              | ~$5,000+ USD          | 🚀                    |
-
----
-
-## 🎓 VibeCoding: Construyendo en Público
-
-Este proyecto documenta **TODO** el proceso de construcción de forma transparente.
-
-### Filosofía
-
-> "No es solo el resultado final, es el viaje. Documentar errores, aprendizajes y decisiones es tan valioso como el código."
-
-### Documentación Completa
-
-| Documento                                                   | Descripción                                   | Líneas   |
-| ----------------------------------------------------------- | --------------------------------------------- | -------- |
-| [00-contexto.md](docs/00-contexto.md)                       | Contexto del buildathon y filosofía           | 200+     |
-| [01-brainstorming.md](docs/01-brainstorming.md)             | Proceso de ideación                           | 150+     |
-| [02-decision-proyecto.md](docs/02-decision-proyecto.md)     | Por qué remesas para Venezuela                | 300+     |
-| [03-stack-tecnico.md](docs/03-stack-tecnico.md)             | Stack y herramientas oficiales                | 250+     |
-| [04-versionado.md](docs/04-versionado.md)                   | Sistema de documentación                      | 100+     |
-| [06-recursos-referencia.md](docs/06-recursos-referencia.md) | Docs oficiales organizadas                    | 200+     |
-| [07-mision-vision.md](docs/07-mision-vision.md)             | Identidad y pitch deck                        | 400+     |
-| [09-user-research.md](docs/09-user-research.md)             | **Investigación de usuario con datos reales** | **800+** |
-| [10-gtm-strategy.md](docs/10-gtm-strategy.md)               | **Estrategia de Go-to-Market**                | **600+** |
-| [11-competidores.md](docs/11-competidores.md)               | **Análisis de competidores**                  | **200+** |
-| [99-iteraciones.md](docs/99-iteraciones.md)                 | **Log de cambios y aprendizajes**             | 400+     |
-
-**Total**: 12 documentos, 4,000+ líneas de documentación
-
-### Iteraciones Documentadas
-
-> **3 iteraciones** completadas • **Última actualización**: 28 Ene 2026
-
-1. **Iteración 1**: Decisión inicial del proyecto
-2. **Iteración 2**: Descubrimiento de Celo Composer
-3. **Iteración 3**: Registro y organización de recursos
-
-[Ver todas las iteraciones →](docs/99-iteraciones.md)
-
----
-
-## 🌱 Comunidad y Crecimiento
-
-<div align="center">
-
-![Countdown](<https://img.shields.io/badge/dynamic/json?url=https://timeapi.io/api/Time/current/zone?timeZone=America/Argentina/Buenos_Aires&query=$.dateTime&label=Deadline&suffix=%20(27%20Feb%202026)&color=red&style=for-the-badge&logo=clock>)
-
-**Deadline del Buildathon**: 27 Febrero 2026, 20:59 ART (23:59 UTC)
-
-</div>
-
-### Timeline del Buildathon
-
-```
-Ahora - Feb 10     │ Feb 11-20        │ Feb 21-27         │ Mar+
-Pre-Lanzamiento    │ Alpha Testing    │ Submission        │ Post-Buildathon
-─────────────────────────────────────────────────────────────────────
-• MVP funcional    │ • Deploy Mainnet │ • Video demo      │ • Análisis
-• Testnet testing  │ • 10-15 testers  │ • Pitch deck      │ • Feedback jueces
-• 5-10 early users │ • 20+ tx reales  │ • Karma Gap       │ • Escalar si ganamos
-```
-
-### Canales Activos
-
-<div align="center">
-
-| Canal                              | Propósito                           | Estado          |
-| ---------------------------------- | ----------------------------------- | --------------- |
-| 🐦 **Twitter** [@PuenteRemesas](#) | VibeCoding público, progreso diario | 🟢 Activo       |
-| 💬 **Telegram** [Comunidad](#)     | Early testers, feedback directo     | 🟢 Activo       |
-| 🎮 **Discord** [Developers](#)     | Comunidad técnica, open source      | 🟡 Próximamente |
-
-</div>
-
-### Early Testers (10-15 personas)
-
-**Buscamos**:
-
-- Venezolanos en el exterior familiarizados con crypto
-- Dispuestos a probar en Mainnet (montos pequeños)
-- Feedback activo durante Feb 11-20
-
-**Beneficios**:
-
-- Acceso primero a la plataforma
-- Reconocimiento en docs
-- Posible airdrop si ganamos
-
-**Interesado?** → [Únete al Telegram](#)
-
-### Métricas de Éxito
-
-**Buildathon** (Críticas):
-
-- ✅ Deploy funcional en Celo Mainnet
-- ✅ 20+ transacciones reales
-- ✅ Video demo + pitch deck
-- ✅ Human.Tech Passport + v0 integrados
-
-**Producto** (Targets):
-
-- 10-15 early testers activos
-- NPS > 7
-- Tiempo de transacción < 2 min
-- Tasa de éxito > 95%
-
-**Post-Buildathon**:
-
-- **Si ganamos**: Usar funding para escalar, contratar community manager, marketing pagado
-- **Si no ganamos**: Continuar como open source, buscar grants/VCs alternativos
-
-[Ver estrategia completa →](docs/10-gtm-strategy.md)
+> **Transparencia Radical**: Documentamos cada error, pivote y decisión.
+> [Leer historias de iteración →](docs/99-iteraciones.md)
 
 ---
 
 ## 📚 Documentación
 
-### Navegación Rápida
+### Core
 
-**Para Desarrolladores**:
+- [Misión y Visión (Híbrida)](docs/07-mision-vision.md)
+- [Stack Técnico (Privy)](docs/03-stack-tecnico.md)
+- [Iteraciones (Log)](docs/99-iteraciones.md)
 
-- [Stack Técnico](docs/03-stack-tecnico.md) - Herramientas y frameworks
-- [Setup Inicial](docs/05-setup-inicial.md) - Cómo empezar
-- [Recursos de Referencia](docs/06-recursos-referencia.md) - Docs oficiales
+### Estratégica
 
-**Para Diseñadores**:
+- [GTM Strategy](docs/10-gtm-strategy.md)
+- [Competidores](docs/11-competidores.md)
+- [Contexto Venezuela](docs/00-contexto.md)
 
-- [User Research](docs/09-user-research.md) - Datos, personas, UX/UI
-- [Paleta de colores y tipografía](docs/09-user-research.md#54-paleta-de-colores-recomendada)
+### Técnica
 
-**Para Business**:
-
-- [Misión y Visión](docs/07-mision-vision.md) - Identidad del proyecto
-- [Análisis de Competidores](docs/11-competidores.md) - Benchmarking
-- [Estrategia de GTM](docs/10-gtm-strategy.md) - Lanzamiento y crecimiento
-
-**Para Jueces del Buildathon**:
-
-- [Contexto](docs/00-contexto.md) - Por qué este proyecto
-- [Decisión de Proyecto](docs/02-decision-proyecto.md) - Razonamiento
-- [Iteraciones](docs/99-iteraciones.md) - Proceso transparente
-
----
-
-## 🚀 Inicio Rápido
-
-> **Nota**: El proyecto está en fase de setup. Instrucciones completas disponibles pronto.
-
-```bash
-# Clonar repositorio
-git clone https://github.com/LuisSambrano/puente.git
-cd puente
-
-# Instalar dependencias (próximamente)
-pnpm install
-
-# Ejecutar localmente (próximamente)
-pnpm dev
-```
-
----
-
-## 🤝 Contribuir
-
-Este es un proyecto de buildathon construido en público. Si quieres:
-
-- 🐛 **Reportar un bug**: [Abrir issue](../../issues)
-- 💡 **Sugerir una feature**: [Abrir discussion](../../discussions)
-- 📖 **Mejorar docs**: Pull requests bienvenidos
-- 🧪 **Probar la app**: Únete cuando esté en testnet
+- [Estructura Proyecto](docs/16-estructura-proyecto.md)
+- [Guía Supabase](docs/19-guia-supabase.md)
 
 ---
 
 ## 👥 Equipo
 
-**One Man Army** - LatAm Hubs Buildathon 2026
-
-Construido con:
-
-- ❤️ Para Venezuela
-- 🧠 **Google AI Ecosystem** (Gemini 2.0, AI Studio, NotebookLM, Deep Research, Labs)
-- 🤖 **Claude Antigravity** (Skills, Rules, Workflows, MCP Servers)
-- 🎨 **v0 by Vercel** (UI generation)
-- 🗄️ **Supabase** (Backend)
-- ⚡ **Vercel** (Hosting)
-- 📚 Documentación exhaustiva
-- 🎯 Enfoque en impacto real
-
----
-
-## 📄 Licencia
-
-MIT © 2026 One Man Army
-
----
-
-## 🔗 Links
-
-- 🌐 **Demo**: [Próximamente]
-- 📊 **Karma Gap**: [Próximamente]
-- 🎥 **Video Demo**: [Próximamente]
-- 🐦 **Twitter**: [@PuenteRemesas](#)
-- 💬 **Telegram**: [@PuenteComunidad](#)
-- 📧 **Contacto**: [Tu email]
+**One Man Army**
+_Construyendo el futuro financiero de Venezuela._
 
 ---
 
 <div align="center">
 
-### ⭐ Si te gusta el proyecto, dale una estrella
-
-[![GitHub stars](https://img.shields.io/github/stars/LuisSambrano/puente?style=social)](../../stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/LuisSambrano/puente?style=social)](../../network/members)
-
-**Construido en público • Documentado en tiempo real • VibeCoding**
-
-[LatAm Hubs Buildathon 2026](https://latamhubs.lat/) 🌎
-
----
-
-### 🎯 Misión
-
-_Democratizar el acceso a remesas para Venezuela usando tecnología blockchain._
-
-### 🔮 Visión
-
-_Ser el neo-banco digital líder para la diáspora venezolana en 2027._
-
----
-
-**Última actualización**: 28 Enero 2026  
-**Próximo hito**: Ejecutar Celo Composer
+**[LatAm Hubs Buildathon 2026](https://latamhubs.lat/)** 🌎
 
 </div>

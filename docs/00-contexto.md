@@ -6,6 +6,41 @@ Esto es un buildathon de VibeCoding. No se trata de vender humo, sino de constru
 
 ---
 
+## 🎯 Visión Híbrida: 3 Productos en 1
+
+**Puente** no es solo una app de remesas. Es una **plataforma financiera completa** diseñada para la diáspora venezolana.
+
+### El Problema de los Competidores
+
+Los competidores actuales se enfocan en **UNA** sola cosa:
+
+- **ElDorado**: Solo P2P (lento, complejo)
+- **Felix Pago**: Solo remesas (caro, no Venezuela)
+- **Cafecito**: Solo donaciones (caro, solo Argentina)
+- **GoFundMe**: Solo crowdfunding (difícil retiro en LATAM)
+
+### La Solución Puente
+
+Un modelo híbrido que combina lo mejor de los tres mundos:
+
+1. **Fase 1 (Buildathon)**: **Remesas P2P** 💸
+   - MVP enfocado en el track MiniApps.
+   - Enviar/Recibir cUSD instantáneo.
+   - Verificación con Passport.
+
+2. **Fase 2 (Post-Buildathon)**: **Crowdfunding** 🆘
+   - Campañas para emergencias médicas (caso de uso crítico en Venezuela).
+   - Comisiones del 2% (vs 5-10% de GoFundMe).
+
+3. **Fase 3 (Expansión)**: **Donaciones a Creadores** ☕
+   - Estilo "Cafecito" pero en blockchain.
+   - Perfiles públicos para recibir tips.
+   - Comisiones del 1% (vs 10% de Cafecito).
+
+**Inspiración**: **Nubank**. Empezó solo con una tarjeta de crédito (un producto nicho) y hoy es un banco completo de $30B+. Nosotros empezamos con remesas.
+
+---
+
 ## Información Básica
 
 **Equipo**: One Man Army  
@@ -14,33 +49,25 @@ Esto es un buildathon de VibeCoding. No se trata de vender humo, sino de constru
 
 ### Tracks Disponibles
 
-**Open Track** (proyectos nuevos)
-
-- 1er lugar: 1,000 CELO + 200 cUSD
-- 2do lugar: 700 CELO + 70 cUSD
-- 3er lugar: 300 CELO + 30 cUSD
-
-**MiniApps Track** (se permiten proyectos existentes)
+**MiniApps Track** (Nuestro Foco Principal)
 
 - 1er lugar: 3,000 CELO + 300 cUSD
-- 2do lugar: 2,000 CELO + 150 cUSD
-- 3er lugar: 1,000 CELO + 50 cUSD
+- Requisito: PWA integrada con MiniPay.
 
 **Bounties de Sponsors**
 
-- Human.Tech: $1,000 USDC (por integrar WaaP o Passport)
-- v0: $1,000 en créditos (por usar v0 y publicar template)
+- **Human.Tech**: Integrar Passport (Lo usaremos para KYC sin documentos).
+- **v0**: Usar v0 para UI (Lo usaremos para acelerar frontend).
 
 ### Requisitos Técnicos
 
-- Desplegar en Celo Mainnet (obligatorio)
-- URL pública funcionando
-- Repositorio GitHub público
-- Video demo (máx 3 min)
-- Presentación
-- Entregar vía Karma Gap
+- Desplegar en Celo Mainnet (obligatorio).
+- URL pública funcionando (Vercel).
+- Repositorio GitHub público.
+- Video demo (máx 3 min).
+- Entregar vía Karma Gap.
 
-**Bonus**: Proyectos con más transacciones en Mainnet tienen consideración especial para premios más altos.
+**Bonus**: Proyectos con más transacciones en Mainnet tienen consideración especial. Por eso el MVP debe ser **usable** rápido.
 
 ---
 
@@ -50,33 +77,20 @@ Esto es un buildathon de VibeCoding. No se trata de vender humo, sino de constru
 
 Este buildathon es de VibeCoding. Eso significa:
 
-1. **Construir en público**: Mostrar el proceso, no solo el resultado
-2. **Transparencia total**: Documentar decisiones, errores, aprendizajes
-3. **Razonamiento visible**: Explicar el "por qué" detrás de cada decisión técnica
-4. **Proceso iterativo**: Mostrar cómo evolucionan las ideas
-
-### Cómo Integramos Nuestras Herramientas
-
-Tenemos un arsenal de skills, workflows y reglas que ya usamos. La idea es:
-
-**Documentar cómo aplicamos nuestras propias herramientas al proyecto del buildathon.**
-
-Esto incluye:
-
-- Nuestros workflows de GitHub Actions (que acabamos de endurecer)
-- Nuestras skills personalizadas de Antigravity
-- Nuestras reglas de desarrollo
-- Nuestro proceso de toma de decisiones
+1. **Construir en público**: Mostrar el proceso, no solo el resultado.
+2. **Transparencia total**: Documentar decisiones, errores, aprendizajes.
+3. **Razonamiento visible**: Explicar el "por qué" detrás de cada decisión técnica.
+4. **Proceso iterativo**: Mostrar cómo evolucionan las ideas (ej: de "solo remesas" a "modelo híbrido").
 
 ### El Meta-Proyecto
 
 No solo vamos a construir una app. Vamos a documentar:
 
-1. **Brainstorming**: Cómo llegamos a la idea
-2. **Decisiones técnicas**: Por qué elegimos X sobre Y
-3. **Arquitectura**: Cómo razonamos la estructura
-4. **Problemas encontrados**: Qué falló y cómo lo resolvimos
-5. **Integración de herramientas**: Cómo usamos nuestras skills/workflows
+1. **Brainstorming**: Cómo llegamos a la idea híbrida.
+2. **Decisiones técnicas**: Por qué Privy en vez de RainbowKit.
+3. **Arquitectura**: Cómo manejamos 3 productos en una base de datos.
+4. **Problemas encontrados**: Qué falló y cómo lo resolvimos.
+5. **Integración de herramientas**: Cómo usamos IA para compensar ser "One Man Army".
 
 ---
 
@@ -87,151 +101,39 @@ No solo vamos a construir una app. Vamos a documentar:
 ```
 one-man-army/
 ├── docs/
-│   ├── 00-contexto.md              # Este archivo
-│   ├── 01-brainstorming.md         # Proceso de ideación
-│   ├── 02-decisiones-tecnicas.md   # Por qué elegimos cada tech
-│   ├── 03-arquitectura.md          # Razonamiento de arquitectura
-│   ├── 04-integracion-skills.md    # Cómo usamos nuestras skills
-│   ├── 05-workflows.md             # Workflows aplicados al proyecto
-│   ├── 06-problemas.md             # Log de problemas y soluciones
-│   └── 07-aprendizajes.md          # Qué aprendimos
-```
-
-### Formato de Documentación
-
-**Español natural, sin hype**. Ejemplo:
-
-❌ MAL:
-
-```
-¡Revolucionaria arquitectura que transformará el ecosistema!
-```
-
-✅ BIEN:
-
-```
-Decidimos usar Next.js porque:
-1. Ya lo conocemos bien
-2. Tiene buen soporte para Celo
-3. v0 genera componentes de Next.js
+│   ├── 00-contexto.md              # Este archivo (Visión General)
+│   ├── 02-decision-proyecto.md     # Por qué el modelo híbrido
+│   ├── 03-stack-tecnico.md         # Stack con Privy + Celo + Supabase
+│   ├── 07-mision-vision.md         # Roadmap a 2027
+│   ├── 10-gtm-strategy.md          # Cómo vamos a crecer
+│   ├── 11-competidores.md          # Análisis profundo de competencia
+│   └── 99-iteraciones.md           # Log de cambios (Pivot a Híbrido)
 ```
 
 ---
 
-## Decisiones Iniciales a Tomar
+## Decisiones Iniciales (Actualizadas)
 
 ### 1. ¿Qué Track?
 
-**Opciones**:
-
-- Open Track: Libertad total, menos premio
-- MiniApps: Más premio, más restricciones (Farcaster/MiniPay)
-
-**Pregunta para ti**: ¿Tienes experiencia con Farcaster o MiniPay? ¿O prefieres libertad total?
+**MiniApps Track**. Es el que tiene mejor premio y se alinea perfecto con remesas móviles.
 
 ### 2. ¿Qué Bounties?
 
-**Human.Tech** ($1,000 USDC)
-
-- Requiere integrar Passport (proof-of-personhood)
-- Útil para prevenir bots/sybils
-- ¿Tu proyecto necesita verificación de identidad?
-
-**v0** ($1,000 créditos)
-
-- Requiere usar v0 para UI
-- Publicar como template público
-- Mostrar branding de v0
-- ¿Te sirve para acelerar desarrollo de UI?
+- **Human.Tech Passport**: CRÍTICO para nuestra identidad "sin documentos".
+- **v0**: CRÍTICO para construir la UI rápido sin ser expertos en React.
 
 ### 3. ¿Qué Vamos a Construir?
 
-Necesitamos una idea que:
+**Puente MVP (Fase 1)**:
 
-1. Resuelva un problema real
-2. Sea factible en 5 semanas
-3. Genere transacciones (para el bonus)
-4. Se alinee con tus intereses/experiencia
+- Login con Email (Privy).
+- Wallet no-custodial invisible.
+- Enviar cUSD a otro usuario.
+- Verificación básica con Passport.
+- Historial de transacciones.
 
----
-
-## Nuestro Proceso de Trabajo
-
-### Cómo Vamos a Trabajar
-
-1. **Documentar antes de codear**: Razonamiento primero, código después
-2. **Commits atómicos**: Como acabamos de hacer con los workflows
-3. **Workflows automatizados**: Aplicar lo que ya sabemos
-4. **Skills reutilizables**: Usar nuestras skills de Antigravity
-5. **Construcción en público**: Todo el proceso visible
-
-### Herramientas Que Ya Tenemos
-
-**GitHub Actions** (recién endurecidos):
-
-- Changelog automático
-- Stats reports semanales
-- CI/CD robusto con error handling
-
-**Antigravity Skills**:
-
-- Skill creator
-- Architect (para decisiones de arquitectura)
-- Otros que tengamos
-
-**Workflows**:
-
-- Los que ya definimos en `.agent/workflows/`
-
-### Cómo Las Vamos a Integrar
-
-**Ejemplo concreto**:
-
-Si usamos nuestro workflow de changelog:
-
-```
-docs/05-workflows.md:
-"Aplicamos nuestro workflow hardened de changelog porque:
-- Genera changelog automático en cada release
-- Ya lo probamos y funciona
-- Demuestra que usamos nuestras propias herramientas
-- Es parte de nuestra metodología de trabajo"
-```
-
----
-
-## Próximos Pasos Reales
-
-### Lo Que Necesito Saber
-
-1. **Idea de proyecto**: ¿Ya tienes algo en mente? ¿O brainstormeamos juntos?
-
-2. **Experiencia técnica**:
-   - ¿Has trabajado con Celo antes?
-   - ¿Conoces Farcaster/MiniPay?
-   - ¿Nivel de experiencia con Web3?
-
-3. **Track preferido**:
-   - ¿Open (libertad) o MiniApps (más premio)?
-
-4. **Bounties**:
-   - ¿Te interesa Human.Tech Passport?
-   - ¿Quieres usar v0?
-
-### Estructura Inicial
-
-Una vez tengamos claridad, crearemos:
-
-```
-/Users/luissambrano/Proyectos/Lab/one-man-army/
-```
-
-Con:
-
-- Repositorio GitHub
-- Estructura de proyecto
-- Documentación de proceso
-- Setup inicial
+_Las fases de Crowdfunding y Donaciones quedan documentadas y en arquitectura, pero implementadas post-buildathon para garantizar entrega._
 
 ---
 
@@ -239,26 +141,13 @@ Con:
 
 **Esto NO es**:
 
-- Marketing
-- Promesas vacías
-- Hype artificial
+- Un fork de un proyecto existente.
+- Una "memecoin" o proyecto especulativo.
 
 **Esto ES**:
 
-- Proceso real de desarrollo
-- Decisiones documentadas
-- Problemas y soluciones reales
-- Construcción transparente en público
+- Una solución real a los $4-5B de remesas venezolanas.
+- Un intento serio de competir con Western Union, Felix Pago y ElDorado.
+- Un proyecto construido sobre infraestructura sólida (Celo + Privy + Supabase).
 
-**Para VibeCoding**: Mostrar cómo pensamos, cómo decidimos, cómo construimos.
-
----
-
-## Preguntas para Ti
-
-1. ¿Qué tipo de aplicación te gustaría construir?
-2. ¿Prefieres enfocarte en un track específico o ir por varios bounties?
-3. ¿Cuál es tu nivel de comodidad con las tecnologías del buildathon?
-4. ¿Hay alguna idea que ya tengas en mente?
-
-Una vez tengamos esto claro, armamos el proyecto y empezamos a documentar el proceso de construcción.
+**Para VibeCoding**: Mostrar cómo pensamos, cómo decidimos, cómo pivotamos (a híbrido) y cómo construimos.
