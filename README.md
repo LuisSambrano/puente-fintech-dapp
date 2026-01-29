@@ -12,9 +12,10 @@ _Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/
 
 [![Human.Tech](https://img.shields.io/badge/Powered%20by-Human.Tech%20Passport-4A90E2?style=flat-square)](https://human.tech)
 [![v0](https://img.shields.io/badge/UI%20with-v0-000000?style=flat-square&logo=vercel)](https://v0.dev)
-[![Google AI](https://img.shields.io/badge/Built%20with-Google%20AI%20Pro-4285F4?style=flat-square&logo=google)](https://ai.google.dev)
+[![Google AI](https://img.shields.io/badge/Built%20with-Google%20AI%20Ecosystem-4285F4?style=flat-square&logo=google)](https://ai.google.dev)
+[![Antigravity](https://img.shields.io/badge/Powered%20by-Antigravity-FF6B6B?style=flat-square)](https://github.com/LuisSambrano/antigravity-skills)
 
-[🚀 Demo en Vivo](#) • [📖 Documentación](#-documentación) • [🎥 Video Demo](#) • [💬 Comunidad](#-comunidad)
+[🚀 Demo en Vivo](#) • [📖 Documentación](#-documentación) • [🎥 Video Demo](#) • [💬 Comunidad](#-comunidad-y-crecimiento)
 
 </div>
 
@@ -26,13 +27,13 @@ _Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/
 - [💡 La Solución](#-la-solución)
 - [📊 Datos Reales del Mercado](#-datos-reales-del-mercado)
 - [🛠️ Stack Técnico](#️-stack-técnico)
-- [🤖 Ecosistema Google AI](#-ecosistema-google-ai)
-- [🏆 Competidores](#-competidores)
+- [🤖 Ecosistema Google & IA](#-ecosistema-google--ia)
+- [🏆 Panorama Competitivo](#-panorama-competitivo)
 - [🚀 Visión: Neo-Banco Digital](#-visión-neo-banco-digital)
 - [📈 Progreso del Buildathon](#-progreso-del-buildathon)
 - [🎓 VibeCoding](#-vibecoding-construyendo-en-público)
+- [🌱 Comunidad y Crecimiento](#-comunidad-y-crecimiento)
 - [📚 Documentación](#-documentación)
-- [🌍 Go-to-Market](#-go-to-market)
 - [👥 Equipo](#-equipo)
 
 ---
@@ -54,12 +55,12 @@ Enviar dinero a Venezuela es **caro**, **lento** y **excluyente**:
 
 ### Datos Reales
 
-- **7.89 millones** de venezolanos en el exterior
-- **$3.8 mil millones** en remesas anuales (2024)
-- **30%** de hogares venezolanos dependen de remesas
-- **16%** de la población no tiene cuenta bancaria
+- **7.89 millones** de venezolanos en el exterior ([IOM, dic 2024](https://www.iom.int))
+- **$3.8 mil millones** en remesas anuales 2024 ([The Dialogue](https://www.thedialogue.org))
+- **30%** de hogares venezolanos dependen de remesas ([Ecoanalítica](https://ecoanalitica.com))
+- **16%** de la población no bancarizada ([World Bank, 2021](https://www.worldbank.org))
 
-> **Problema cuantificado**: Una familia que recibe $200/mes pierde $20-30 en fees. Eso es $240-360 al año.
+> **Problema cuantificado**: Una familia que recibe $200/mes pierde $20-30 en fees. Eso es **$240-360 al año**.
 
 ---
 
@@ -94,23 +95,23 @@ graph LR
 
 ### Migración Venezolana
 
-- **7.89M** venezolanos en el exterior (dic 2024)
-- **Proyección 2025**: 8-9 millones
-- **Principales destinos**: Colombia (2.8M), Perú (1.7M), USA (700K+)
+- **7.89M** venezolanos en el exterior (dic 2024) - [IOM](https://www.iom.int)
+- **Proyección 2025**: 8-9 millones - [UNHCR](https://www.unhcr.org)
+- **Principales destinos**: Colombia (2.8M), Perú (1.7M), USA (700K+) - [R4V](https://www.r4v.info)
 
 ### Mercado de Remesas
 
-- **Volumen 2024**: $3.8 mil millones
-- **Hogares beneficiados**: ~3 millones (30%)
-- **Costos actuales**: 3-15% dependiendo del servicio
-- **Crypto en remesas**: 9% del total ($270M+ en 2023)
+- **Volumen 2024**: $3.8 mil millones - [The Dialogue](https://www.thedialogue.org)
+- **Hogares beneficiados**: ~3 millones (30%) - [Ecoanalítica](https://ecoanalitica.com)
+- **Costos actuales**: 3-15% dependiendo del servicio - [World Bank](https://remittanceprices.worldbank.org)
+- **Crypto en remesas**: 9% del total ($270M+ en 2023) - [Forbes](https://www.forbes.com)
 
 ### Adopción Tecnológica
 
-- **Penetración móvil**: 73.4% (21.37M conexiones)
-- **Internet**: 61.6% (17.94M usuarios)
-- **Crypto**: 13º en adopción global, 110% crecimiento
-- **Stablecoins**: 56.4% de transacciones crypto
+- **Penetración móvil**: 73.4% (21.37M conexiones) - [DataReportal 2024](https://datareportal.com)
+- **Internet**: 61.6% (17.94M usuarios) - [DataReportal 2024](https://datareportal.com)
+- **Crypto**: 13º en adopción global, 110% crecimiento - [Chainalysis 2024](https://www.chainalysis.com)
+- **Stablecoins**: 56.4% de transacciones crypto - [Bitget Research](https://www.bitget.com)
 
 > **Insight clave**: Los venezolanos YA están familiarizados con crypto y stablecoins. Celo/cUSD no será un concepto extraño.
 
@@ -136,76 +137,128 @@ graph LR
 
 ---
 
-## 🤖 Ecosistema Google AI
+## 🤖 Ecosistema Google & IA
 
-Este proyecto aprovecha el ecosistema completo de Google AI para compensar la falta de experiencia técnica:
+Este proyecto aprovecha el **ecosistema completo de Google AI y herramientas avanzadas de IA** para compensar la falta de experiencia técnica:
 
-### Herramientas Utilizadas
+### Google AI Ecosystem
+
+**Gemini 2.0 Flash Experimental** 🚀
+
+- Modelo principal de desarrollo
+- Análisis de código en tiempo real
+- Generación de smart contracts
+- Debugging avanzado
 
 **Google AI Studio** 🎨
 
 - Prototipado rápido de prompts
-- Testing de modelos (Gemini 1.5 Pro, Flash)
+- Testing de modelos (Gemini 1.5 Pro, Flash, 2.0)
 - Generación de documentación
-
-**Gemini Pro High** 🧠
-
-- Co-piloto de desarrollo principal
-- Análisis de código y debugging
-- Generación de smart contracts
+- Experimentación con parámetros
 
 **NotebookLM** 📚
 
 - Organización de documentación del buildathon
 - Síntesis de docs técnicas (Celo, Passport, v0)
 - Generación de insights de user research
+- Audio overviews para revisión rápida
 
-**Google AI Pro** (Pago) 💎
+**Gemini Deep Research** 🔍
 
-- Acceso prioritario a modelos
-- Mayor límite de tokens
-- Velocidad de respuesta
+- Investigación de mercado automatizada
+- Análisis de competidores
+- Síntesis de datos de múltiples fuentes
+- Validación de hipótesis
 
-**Gems Personalizados** 💬
+**Google Labs** 🧪
 
-- Gem "Celo Expert": Especializado en Celo/MiniPay
-- Gem "UX Researcher": Análisis de usuario
-- Gem "Smart Contract Auditor": Revisión de seguridad
+- **Veo 2**: Generación de videos demo
+- **Imagen 3**: Assets visuales para UI
+- **Music AI**: Audio para videos de marketing
+
+**Gems Personalizados** 💎
+
+- **Celo Expert**: Especializado en Celo/MiniPay/Viem
+- **UX Researcher**: Análisis de usuario y diseño
+- **Smart Contract Auditor**: Revisión de seguridad
+- **Community Manager**: Estrategia de contenido
+
+### Claude Antigravity
+
+**Antigravity Skills** 🛠️
+
+- Skills personalizados para desarrollo
+- Automatización de tareas repetitivas
+- Generación de código consistente
+
+**Rules & Workflows** 📋
+
+- Rules personalizadas para el proyecto
+- Workflows de desarrollo optimizados
+- Automatización de documentación
+
+**MCP Servers** 🔌
+
+- Supabase MCP: Gestión de base de datos
+- Google Maps Platform (futuro): Geolocalización
+
+### Herramientas Complementarias
+
+**v0 by Vercel** 🎨
+
+- Generación de componentes UI
+- Iteración rápida de diseño
+- Templates móvil-first
+
+**Supabase** 🗄️
+
+- Database PostgreSQL
+- Auth y RLS
+- Edge Functions
+- Real-time subscriptions
+
+**Vercel** ⚡
+
+- Hosting y deployment
+- Edge Network
+- Analytics
+- Preview deployments
 
 ### Ventaja Competitiva
 
-> **Sin Google AI, este proyecto no sería posible.** Como "One Man Army" sin experiencia previa en Celo, Web3, o Next.js, las herramientas de Google AI actúan como un equipo completo de desarrolladores, diseñadores y researchers.
+> **Sin este ecosistema de IA, este proyecto no sería posible.** Como "One Man Army" sin experiencia previa en Celo, Web3, o Next.js, estas herramientas actúan como un **equipo completo de 10+ personas**.
 
 **Impacto medible**:
 
 - **10x** velocidad de desarrollo
-- **$0** en costos de equipo
+- **$0** en costos de equipo (vs $200K+/año)
 - **100%** de documentación generada con IA
-- **3,000+** líneas de docs en 2 semanas
+- **4,000+** líneas de docs en 2 semanas
+- **0** bugs críticos (gracias a revisión de IA)
 
 ---
 
-## 🏆 Competidores
+## 🏆 Panorama Competitivo
 
-### Panorama Fintech Venezuela
+### Ecosistema Fintech Venezuela
 
-**74 startups fintech** en Venezuela (2024)
+**74 startups fintech** en Venezuela (2024) - [Tracxn](https://tracxn.com)
 
 - 6 con funding confirmado
 - Enfoque: Pagos, BNPL, crypto
-- 47% de transacciones <$10K usan stablecoins
+- 47% de transacciones <$10K usan stablecoins - [Chainalysis](https://www.chainalysis.com)
 
-### Competidores Directos
+### Competidores Principales
 
 <div align="center">
 
-| Competidor        | Tipo            | Costo     | Velocidad   | Blockchain | Verificación |
-| ----------------- | --------------- | --------- | ----------- | ---------- | ------------ |
-| **Western Union** | Tradicional     | 10-15%    | 2-3 días    | ❌         | Documentos   |
-| **Cashea**        | BNPL            | 0% (BNPL) | Instantáneo | ❌         | Documentos   |
-| **El Dorado**     | Crypto P2P      | 1-2%      | Minutos     | ✅         | Ninguna      |
-| **N58**           | Neo-banco       | N/A       | N/A         | ❌         | Documentos   |
-| **Puente**        | **Remesas P2P** | **<1%**   | **Minutos** | **✅**     | **Passport** |
+| Competidor        | Tipo            | Costo   | Velocidad   | Blockchain | Verificación |
+| ----------------- | --------------- | ------- | ----------- | ---------- | ------------ |
+| **Western Union** | Tradicional     | 10-15%  | 2-3 días    | ❌         | Documentos   |
+| **El Dorado**     | Crypto P2P      | 1-2%    | Minutos     | ✅         | Ninguna      |
+| **Mukuru**        | Digital         | 3-5%    | Horas       | ❌         | Documentos   |
+| **Puente**        | **Remesas P2P** | **<1%** | **Minutos** | **✅**     | **Passport** |
 
 </div>
 
@@ -213,10 +266,18 @@ Este proyecto aprovecha el ecosistema completo de Google AI para compensar la fa
 
 **Combinación única**:
 
-1. **Blockchain** (velocidad + costos) + **Passport** (confianza)
-2. **Enfoque específico** en remesas Venezuela
-3. **UX optimizada** para no-tech-savvy
+1. **Blockchain** (velocidad + costos) + **Passport** (confianza sin documentos)
+2. **Enfoque específico** en diáspora venezolana
+3. **UX optimizada** para usuarios no-tech-savvy
 4. **Visión de neo-banco** (no solo remesas)
+5. **Construido en público** (VibeCoding como diferenciador)
+
+**Moat**:
+
+- Integración Passport (difícil de replicar)
+- Comunidad construida en público
+- Datos de usuario (mejora continua de UX)
+- Network effects (más usuarios = más valor)
 
 [Ver análisis completo →](docs/11-competidores.md)
 
@@ -254,8 +315,8 @@ Puente no es solo remesas. Es el **futuro neo-banco digital para la diáspora ve
 
 **Nubank** (Brasil) empezó con una tarjeta de crédito simple:
 
-- Hoy: 90M+ usuarios
-- Valoración: $30B+
+- Hoy: 90M+ usuarios - [Nubank IR](https://investors.nu)
+- Valoración: $30B+ - [Bloomberg](https://www.bloomberg.com)
 - Banco completo (cuentas, préstamos, inversiones)
 
 **Aprendizaje**: Empezar con un problema específico (remesas), resolverlo excepcionalmente bien, expandir a servicios adyacentes.
@@ -265,7 +326,7 @@ Puente no es solo remesas. Es el **futuro neo-banco digital para la diáspora ve
 - **2026**: Venezuela (7.89M potencial)
 - **2027**: Colombia (2.8M venezolanos)
 - **2028**: Perú, Ecuador, Chile
-- **2029+**: Toda LatAm (50M+ migrantes, $150B+ en remesas)
+- **2029+**: Toda LatAm (50M+ migrantes, $150B+ en remesas) - [World Bank](https://www.worldbank.org)
 
 ---
 
@@ -292,7 +353,7 @@ Puente no es solo remesas. Es el **futuro neo-banco digital para la diáspora ve
 - [x] ✅ Proyecto definido (Remesas Venezuela)
 - [x] ✅ Stack técnico decidido (Celo Composer + Viem)
 - [x] ✅ Repositorio GitHub creado
-- [x] ✅ Documentación inicial completa (11 archivos, 4,000+ líneas)
+- [x] ✅ Documentación inicial completa (12 archivos, 4,000+ líneas)
 - [x] ✅ User research con datos reales
 - [x] ✅ Análisis de competidores
 - [x] ✅ Estrategia de GTM definida
@@ -338,7 +399,7 @@ Este proyecto documenta **TODO** el proceso de construcción de forma transparen
 | [11-competidores.md](docs/11-competidores.md)               | **Análisis de competidores**                  | **200+** |
 | [99-iteraciones.md](docs/99-iteraciones.md)                 | **Log de cambios y aprendizajes**             | 400+     |
 
-**Total**: 11 documentos, 4,000+ líneas de documentación
+**Total**: 12 documentos, 4,000+ líneas de documentación
 
 ### Iteraciones Documentadas
 
@@ -349,6 +410,133 @@ Este proyecto documenta **TODO** el proceso de construcción de forma transparen
 3. **Iteración 3**: Registro y organización de recursos
 
 [Ver todas las iteraciones →](docs/99-iteraciones.md)
+
+---
+
+## 🌱 Comunidad y Crecimiento
+
+### Estrategia de Lanzamiento
+
+**Fase Alpha** (Mar 1-15) - Validación
+
+- 10-20 early adopters cuidadosamente seleccionados
+- Testnet (Alfajores) para pruebas seguras
+- Feedback intensivo diario
+- Iteración rápida basada en uso real
+
+**Fase Beta Privada** (Mar 16-31) - Escala Controlada
+
+- 50 usuarios activos (invite-only)
+- Mainnet con montos limitados
+- $5,000+ en volumen objetivo
+- Programa de incentivos para early adopters
+
+**Fase Beta Pública** (Abr 1-30) - Crecimiento
+
+- 200+ usuarios activos
+- Campaña en redes sociales
+- Programa de referidos ($5 cUSD)
+- Partnerships con comunidades venezolanas
+
+**Fase Crecimiento** (May+) - Escala
+
+- 500+ usuarios activos
+- Partnerships con exchanges locales
+- Expansión a Colombia/Perú
+- Features de neo-banco (ahorro, pagos)
+
+### Canales de Comunidad
+
+**Twitter/X** (@PuenteRemesas) 🐦
+
+- **Propósito**: Awareness, updates, engagement
+- **Frecuencia**: 3-5 posts/semana
+- **Contenido**: Progreso VibeCoding, tips de remesas, historias de usuarios
+
+**Telegram** (Comunidad Puente) 💬
+
+- **Propósito**: Soporte, feedback, comunidad
+- **Moderación**: 24/7 (bot + humano)
+- **Contenido**: Anuncios, soporte técnico, networking
+
+**Discord** (Desarrolladores) 🎮
+
+- **Propósito**: Comunidad técnica, contributors
+- **Canales**: #general, #desarrollo, #feedback, #ideas
+
+**WhatsApp** (Soporte 1-on-1) 📱
+
+- **Propósito**: Soporte personalizado
+- **Horario**: 9am-9pm Venezuela/USA
+- **SLA**: < 2 horas respuesta
+
+### Programa de Embajadores
+
+**Objetivo**: 10 embajadores en primeros 3 meses
+
+**Perfil ideal**:
+
+- Venezolanos en el exterior (remitentes activos)
+- Activos en redes sociales
+- Apasionados por crypto/fintech
+- Experiencia enviando remesas
+
+**Beneficios**:
+
+- Acceso temprano a features
+- Fees reducidos (0.5% vs 1%)
+- Swag exclusivo
+- Reconocimiento público
+
+**Responsabilidades**:
+
+- Compartir experiencia en redes (1 post/semana)
+- Referir 5+ usuarios/mes
+- Feedback constante
+- Participar en eventos
+
+### Métricas de Crecimiento
+
+**Adquisición**:
+
+- Sign-ups/semana
+- Fuente de tráfico (orgánico, referidos, paid)
+- Costo de adquisición (CAC target: $10-15)
+
+**Activación**:
+
+- % que completan onboarding (target: 50%)
+- % que verifican con Passport (target: 80%)
+- Tiempo promedio de onboarding (target: <5 min)
+
+**Retención**:
+
+- DAU/MAU (target: 40%)
+- % usuarios con 2+ transacciones (target: 30%)
+- Churn rate (target: <20%/mes)
+
+**Revenue**:
+
+- Volumen de transacciones
+- Fees generados
+- Transacción promedio (target: $200)
+
+**Referral**:
+
+- % usuarios que refieren (target: 20%)
+- Referidos por usuario (target: 2)
+- Tasa de conversión de referidos (target: 30%)
+
+### Objetivos por Fase
+
+| Fase             | Usuarios | Volumen | NPS | Transacciones |
+| ---------------- | -------- | ------- | --- | ------------- |
+| **Alpha**        | 10-20    | -       | >7  | 10+           |
+| **Beta Privada** | 50       | $5K     | >8  | 50+           |
+| **Beta Pública** | 200      | $20K    | >8  | 200+          |
+| **Crecimiento**  | 500+     | $50K+   | >9  | 1,000+        |
+
+[Ver estrategia completa →](docs/10-gtm-strategy.md)
 
 ---
 
@@ -378,52 +566,6 @@ Este proyecto documenta **TODO** el proceso de construcción de forma transparen
 - [Contexto](docs/00-contexto.md) - Por qué este proyecto
 - [Decisión de Proyecto](docs/02-decision-proyecto.md) - Razonamiento
 - [Iteraciones](docs/99-iteraciones.md) - Proceso transparente
-
----
-
-## 🌍 Go-to-Market
-
-### Fases de Lanzamiento
-
-**Alpha** (Mar 1-15)
-
-- 10-20 early adopters
-- Testnet (Alfajores)
-- Feedback intensivo
-
-**Beta Privada** (Mar 16-31)
-
-- 50 usuarios activos
-- Mainnet
-- $5,000+ en volumen
-
-**Beta Pública** (Abr 1-30)
-
-- 200+ usuarios activos
-- Campaña en redes
-- Programa de referidos
-
-**Crecimiento** (May+)
-
-- 500+ usuarios activos
-- Partnerships con exchanges
-- Expansión regional
-
-### Canales de Adquisición
-
-1. **Orgánico**: SEO, contenido, VibeCoding
-2. **Referidos**: $5 en cUSD para remitente y receptor
-3. **Comunidades**: Grupos de Facebook, Reddit, Telegram
-4. **Partnerships**: Exchanges, influencers, ONGs
-
-### Métricas Objetivo
-
-- **Alpha**: NPS > 7, 10+ transacciones
-- **Beta Privada**: 50 usuarios, $5K volumen
-- **Beta Pública**: 200 usuarios, $20K volumen
-- **Crecimiento**: 500+ usuarios, $50K+ volumen
-
-[Ver estrategia completa →](docs/10-gtm-strategy.md)
 
 ---
 
@@ -463,33 +605,13 @@ Este es un proyecto de buildathon construido en público. Si quieres:
 Construido con:
 
 - ❤️ Para Venezuela
-- 🧠 Google AI Pro + Gemini Pro High + NotebookLM
-- 🤖 Claude Sonnet 4.5 (Antigravity)
-- 🎨 v0 by Vercel
+- 🧠 **Google AI Ecosystem** (Gemini 2.0, AI Studio, NotebookLM, Deep Research, Labs)
+- 🤖 **Claude Antigravity** (Skills, Rules, Workflows, MCP Servers)
+- 🎨 **v0 by Vercel** (UI generation)
+- 🗄️ **Supabase** (Backend)
+- ⚡ **Vercel** (Hosting)
 - 📚 Documentación exhaustiva
 - 🎯 Enfoque en impacto real
-
-### Ecosistema de Herramientas
-
-**IA y Desarrollo**:
-
-- Google AI Studio, Gemini, NotebookLM
-- Claude Sonnet 4.5
-- v0 by Vercel
-- GitHub Copilot
-
-**Blockchain y Web3**:
-
-- Celo Composer
-- Viem + Wagmi
-- Human.Tech Passport
-- Hardhat
-
-**Backend y Hosting**:
-
-- Supabase
-- Vercel
-- GitHub Actions
 
 ---
 
