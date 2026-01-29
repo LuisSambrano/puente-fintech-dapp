@@ -57,7 +57,7 @@ export function Navbar() {
                 ))}
                 <div className="mt-6 pt-6 border-t">
                   <Button asChild className="w-full">
-                    <ConnectButton />
+                    <WalletConnectButton />
                   </Button>
                 </div>
               </nav>
@@ -93,7 +93,7 @@ export function Navbar() {
           ))}
           
           <div className="flex items-center gap-3">
-            <ConnectButton />
+            <WalletConnectButton />
           </div>
         </nav>
       </div>
