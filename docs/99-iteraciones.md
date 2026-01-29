@@ -247,6 +247,140 @@ Usuario investigó con Gemini y encontró:
 
 ---
 
+## Iteración 3 - Registro del Equipo y Organización de Recursos
+
+**Fecha**: 2026-01-28 (noche)
+
+### Cambio
+
+Registro oficial del equipo y organización de documentación de referencia
+
+### Acciones Completadas
+
+**1. Setup de MetaMask y Celo**
+
+- Configurado Celo Mainnet en MetaMask
+- Cuenta "One Man Army" creada
+- Dirección de wallet obtenida
+
+**2. Registro del Equipo**
+
+- Equipo registrado en LatAm Hubs
+- Esperando confirmación
+- 3 CELO pendientes de recibir
+
+**3. Repositorio GitHub**
+
+- Creado: https://github.com/LuisSambrano/puente
+- Documentación inicial pusheada (8 archivos, 2,327 líneas)
+- RentPay clonado para referencia
+
+**4. Organización de Recursos**
+
+- Creado `06-recursos-referencia.md`
+- Documentación oficial organizada por prioridad
+- FAQ del buildathon documentado
+
+**5. Identidad del Proyecto**
+
+- Creado `07-mision-vision.md`
+- Misión, visión y objetivos definidos
+- Estructura de pitch deck preparada
+- Narrativa para jueces desarrollada
+
+### Documentación Agregada
+
+**Recursos de Referencia**:
+
+- Human.Tech (docs, WaaP, Passport)
+- v0 (docs, templates)
+- Celo Academy (tutoriales en español)
+- Videos de VibeCoding
+- FAQ completo del buildathon
+
+**Misión y Visión**:
+
+- Historia del proyecto
+- Propuesta de valor (remitente y receptor)
+- Diferenciadores vs competencia
+- Estructura de pitch deck (10 slides)
+- Narrativa para presentación
+
+### Aprendizajes
+
+**Lección 1**: Configuración de redes en MetaMask
+
+- Algunos RPCs de Celo Alfajores no funcionan
+- Mainnet es suficiente para empezar
+- Alfajores solo necesario para testing
+
+**Lección 2**: Importancia de la narrativa
+
+- No es solo código, es una historia
+- Misión/visión ayudan a enfocar desarrollo
+- Pitch deck se construye desde el principio
+
+**Lección 3**: Documentación como ventaja
+
+- Organizar recursos ahorra tiempo después
+- FAQ del buildathon tiene info crítica
+- Referencia centralizada facilita desarrollo
+
+### Recursos Clave Identificados
+
+**Para Passport**:
+
+- https://docs.passport.xyz/building-with-passport/embed/introduction
+- Embeds son el approach recomendado
+
+**Para v0**:
+
+- https://v0.app/templates
+- Publicar como template es requisito
+
+**Para MiniApp**:
+
+- https://www.celo.mx/academy/construye-tu-miniapp-en-farcaster
+- Tutorial completo en español
+
+### Criterios de Evaluación Confirmados
+
+1. **Impacto** - Problema real, solución real
+2. **Calidad** - Código limpio, bien documentado
+3. **Demo** - Clara y convincente
+4. **Historia** - Narrativa compelling
+5. **Transacciones** - Más volumen = mejor consideración
+
+### Estrategia de Bounties Confirmada
+
+**Human.Tech** ($1,000 USDC):
+
+- Enfocarnos en Passport embeds ($250 x 2)
+- Implementación de calidad > cantidad
+
+**v0** ($1,000 créditos):
+
+- Usar v0 para todos los componentes
+- Publicar como template público
+- Mostrar branding claramente
+
+### Próximos Pasos Inmediatos
+
+1. ✅ Equipo registrado
+2. ⏳ Esperar confirmación y 3 CELO
+3. ⏳ Ejecutar Celo Composer
+4. ⏳ Explorar estructura generada
+5. ⏳ Estudiar RentPay
+6. ⏳ Primer componente con v0
+
+### Archivos Afectados
+
+- `docs/06-recursos-referencia.md` (creado)
+- `docs/07-mision-vision.md` (creado)
+- `docs/99-iteraciones.md` (este archivo)
+
+---
+
 **Última actualización**: 2026-01-28  
-**Total de iteraciones**: 2  
+**Total de iteraciones**: 3  
 **Próxima iteración esperada**: Después de ejecutar Celo Composer
