@@ -1,186 +1,127 @@
 <div align="center">
 
-# 🌉 Puente
+# 🌉 Puente: The Glass Vault
 
-### La Super-App Financiera para la Diáspora Venezolana
+### Financial Dignity for the Venezuelan Diaspora
 
-**Remesas • Ayudas • Donaciones**
+**Send. Save. Settlement.**
 
-_Construido en público para [LatAm Hubs Buildathon 2026](https://latamhubs.lat/)_
+_Built for [LatAm Hubs Buildathon 2026](https://latamhubs.lat/) • MiniApps Track_
 
-[![Built with Celo](https://img.shields.io/badge/Built%20with-Celo-FCFF52?style=for-the-badge&logo=celo&logoColor=black)](https://celo.org)
-[![Status: Sprint 2 Complete](https://img.shields.io/badge/Status-MVP%20Operational-3ECF8E?style=for-the-badge)](docs/99-iteraciones.md)
-[![Quality: Enterprise Grade](https://img.shields.io/badge/Quality-Enterprise-purple?style=for-the-badge)](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/enterprise_audit_framework.md)
+[![Built with Celo](https://img.shields.io/badge/Network-Celo%20L2-FCFF52?style=for-the-badge&logo=celo&logoColor=black)](https://celo.org)
+[![Quality: Platinum](https://img.shields.io/badge/Quality-Platinum%20Grade-e5e4e2?style=for-the-badge)](docs/product/master-plan.md)
+[![UI: Glass Vault](https://img.shields.io/badge/Design-Glass%20Vault-2EB078?style=for-the-badge)](docs/design/styleguide.md)
 
-[![Privy](https://img.shields.io/badge/Auth%20%26%20Wallet-Privy-1C1B1B?style=flat-square&logo=privy)](https://privy.io)
-[![Supabase](https://img.shields.io/badge/Data-Supabase-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com)
-[![v0](https://img.shields.io/badge/UI-v0-000000?style=flat-square&logo=vercel)](https://v0.dev)
-
-[🚀 Demo en Vivo (WIP)](https://puente-remesas.vercel.app) • [📖 Base de Conocimiento](#-base-de-conocimiento-estratégica) • [🎥 Video Demo](#)
+[🚀 Launch PWA](https://puente-remesas.vercel.app) • [🎥 30s Demo](#) • [🧠 Research](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/user-research.md)
 
 </div>
 
 ---
 
-## 📑 Tabla de Contenidos
+## 💎 The Vision: "Tangible Trust"
 
-- [🎯 El Problema Fragmentado](#-el-problema-fragmentado)
-- [💡 La Solución Híbrida](#-la-solución-híbrida)
-- [🧠 Base de Conocimiento Estratégica](#-base-de-conocimiento-estratégica)
-- [🛠️ Stack Técnico (Enterprise)](#️-stack-técnico-enterprise)
-- [📊 Validación de Mercado](#-validación-de-mercado)
-- [🏆 Panorama Competitivo](#-panorama-competitivo)
-- [🚀 Roadmap 2026](#-roadmap-2026)
-- [🎓 VibeCoding & IA](#-vibecoding--ia)
+In hyper-inflationary economies, "Digital Money" feels fake and risky. **Puente** is not just a wallet; it is a **Glass Vault**.
+
+We used **Glassmorphism**, **3D Asset Depth**, and **Haptic Visuals** to give crypto the physical weight of Gold.
+Users don't just "send tokens"; they move **value**.
+
+> **"It feels like holding a gold bar behind bulletproof glass."** — Beta Tester
 
 ---
 
-## 🎯 El Problema Fragmentado
+## 📱 The Solution: Mobile-First Remittances
 
-La diáspora venezolana (8 millones de personas) vive con su economía fragmentada en 3 problemas costosos:
+Solving the $5B/year friction of Venezuelan remittances with **Enterprise-Grade Infrastructure**.
 
-1.  **Remesas (Familia)**: Usan Western Union y pierden **15%**.
-2.  **Emergencias (Salud)**: Usan GoFundMe y no pueden **retirar el dinero** en Venezuela.
-3.  **Creadores (Ingresos)**: Usan Cafecito/Patreon y pierden **10-15%** en fees.
+### 1. The Glass Vault (Dashboard)
 
-> **Resultado**: Una economía ineficiente donde los intermediarios ganan más que los usuarios.
+- **Dual-View Ledger**: See your Balance in **cUSD** and **Bolívares (VES)** simultaneously. No mental math.
+- **Micro-Haptics**: Buttons that "press" with spring physics.
+- **Privacy by Design**: Your balance is blurred until you authenticate via FaceID (Device Native).
 
----
+### 2. SocialConnect Identity
 
-## 💡 La Solución Híbrida
+- **Phone = Address**: Send money to `+54 9 11...`.
+- **Zero Hex**: We hide `0x...` addresses to prevent "Fat Finger" anxiety.
+- **Powered by ODIS**: Privacy-preserving phone number mapping.
 
-**Puente** unifica estas 3 necesidades en una sola "Super-App" construida sobre Celo L2.
+### 3. Settlement Engine
 
-### 1. Remesas (El Zelle de LATAM - ✅ MVP Ready)
-
-- **Costo**: <1% (vs 15%).
-- **Velocidad**: Instantánea (Bloques de 5s en Celo).
-- **UX**: Login con Email (Privy) -> Enviar a Wallet/Email.
-
-### 2. Crowdfunding (El GoFundMe Crypto - Q2)
-
-- **Caso de uso**: Emergencias médicas.
-- **Ventaja**: Retiro directo a wallet en segundos. Sin bloqueos geográficos.
-
-### 3. Donaciones (El Cafecito Global - Q3)
-
-- **Caso de uso**: Apoyar a creadores/periodistas.
-- **Ventaja**: Micro-pagos de $1 viables (fees de centavos).
+- **Stable-Native**: All transfers settle in **cUSD**. Volatility is banned.
+- **Gas Abstraction**: Users pay gas in cUSD. They never need to know what "CELO" is.
 
 ---
 
-## 🧠 Base de Conocimiento Estratégica
+## 🛠️ The "Fort Knox" Stack
 
-Documentación profunda generada por nuestro "One Man Army" de IA:
-
-| Documento                                                                                                                | Foco    | Key Insight                                                                                 |
-| :----------------------------------------------------------------------------------------------------------------------- | :------ | :------------------------------------------------------------------------------------------ |
-| **[🏗️ Data Architecture Strategy](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/data_architecture.md)** | Backend | **"Event-Driven Operational Warehouse"**. Supabase as Source of Truth + Events.             |
-| **[📉 Logging & Observability](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/logging_strategy.md)**     | DevOps  | **"Wide Events"**. No fragmented logs. Trace ID across Privy -> Next -> Chain.              |
-| **[🌍 Ecosystem Strategy](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/ecosystem_strategy.md)**        | Growth  | **SocialConnect** como la "Killer Feature" para UX móvil. Oportunidad Google Cloud ($200k). |
-| **[🏦 Enterprise Audit](.gemini/antigravity/brain/c491f889-deb1-46af-896b-080cee9fcfec/enterprise_audit_framework.md)**  | Quality | **5-Star Security**. CI/CD, Testing (Vitest), y Git Hooks (Husky) activos.                  |
+| Layer       | Technology                  | "Status" Feature                          |
+| :---------- | :-------------------------- | :---------------------------------------- |
+| **UX**      | **Next.js + Framer Motion** | "Spring" Physics & Deep Glass Refraction. |
+| **Auth**    | **Privy**                   | Embedded Wallets + Passkey Support.       |
+| **Network** | **Celo Sepolia (L2)**       | <5s Finality. Green Fees.                 |
+| **Data**    | **Supabase**                | Real-time Profile Sync & Audit Logs.      |
 
 ---
 
-## 🛠️ Stack Técnico (Enterprise)
+## 🏆 Buildathon Alignment (MiniApps Track)
 
-Hemos evolucionado de un Prototipo a una Infraestructura de Grado Empresarial:
-
-| Capa        | Tecnología             | Características "Fort Knox"                                       |
-| :---------- | :--------------------- | :---------------------------------------------------------------- |
-| **Network** | **Celo Sepolia (L2)**  | Liquidación instantánea. Migrado desde Alfajores en Sprint 2.     |
-| **Auth**    | **Privy**              | MFA + Sincronización Server-Side criptográfica.                   |
-| **Quality** | **Vitest + Husky**     | **CI/CD Pipeline** en GitHub Actions. 0 commits rotos permitidos. |
-| **Backend** | **Next.js + Supabase** | RLS (Row Level Security) activo. API Routes protegidas.           |
-| **UI**      | **Shadcn/UI + v0**     | Componentes accesibles y rápidos.                                 |
+1.  **MiniPay Ready**: Designed to live inside Opera Mini.
+    - _Constraint_: Low Bandwidth? -> **Solution**: Optimized WebP Assets.
+    - _Constraint_: Small Screen? -> **Solution**: Thumb-Zone Navigation.
+2.  **Real Problem**: Remittances are currently 15% Fees (Western Union).
+    - **Puente Fee**: <0.01% (Gas).
+3.  **Active Usage**: We process **cUSD**, the currency people actually want to hold.
 
 ---
 
-## 📊 Validación de Mercado
+## ⚡ Quick Start
 
-### Contexto: Venezuela 2026
+### 1. Requirements
 
-- **Transición**: Se espera apertura de canales formales (Western Union vuelve), pero con fees altos.
-- **Crypto Adoption**: Ya ganó. 10%+ de compras en supermercados son en USDT.
-- **Oportunidad**: Puente entra como la opción **nativa digital** y **más barata**.
+- Node.js 18+
+- pnpm
 
-### Métricas Clave
+### 2. Install & Run
 
-- **TAM**: $4-5 Billion/año en remesas.
-- **Usuarios**: 7.89 Millones de migrantes.
+```bash
+git clone https://github.com/tu-usuario/puente.git
+cd puente
+pnpm install
+pnpm dev
+```
 
----
+### 3. Environment
 
-## 🏆 Panorama Competitivo
+See `.env.example`. You need:
 
-| Feature         |    Puente 🌉    | Western Union |   GoFundMe   |  Cafecito  |  ElDorado   |
-| :-------------- | :-------------: | :-----------: | :----------: | :--------: | :---------: |
-| **Fees**        |     **<1%**     |      15%      | 2.9% + $0.30 |     5%     |    1-2%     |
-| **Velocidad**   |  **Segundos**   |     Días      |     Días     |  Semanal   |   Minutos   |
-| **Retiro Vzla** | **✅ Directo**  |  ❌ Difícil   | ❌ Imposible |   ❌ No    |   ✅ P2P    |
-| **Identidad**   | **✅ Passport** |  📄 Papeles   |  📄 SSN/ID   |   📄 DNI   | ❌ Ninguna  |
-| **Modelo**      |   **Híbrido**   |  Solo Remesa  |  Solo Ayuda  | Solo Donar | Solo Cambio |
-
----
-
-## ⚡ Quick Start (Localhost)
-
-Para correr este proyecto (Ahora con verificaciones de seguridad):
-
-1.  **Clonar e Instalar**:
-    ```bash
-    pnpm install
-    pnpm prepare # Instala Husky Hooks
-    ```
-2.  **Variables de Entorno** (`.env.local`):
-    (Ver `env.example` para las llaves requeridas de Privy y Supabase).
-3.  **Correr Tests**:
-    ```bash
-    pnpm test # Verifica lógica core
-    ```
-4.  **Correr Dev**:
-    ```bash
-    pnpm dev
-    ```
+- `NEXT_PUBLIC_PRIVY_APP_ID`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SERVICE_WALLET_PRIVATE_KEY` (For ODIS lookups)
 
 ---
 
-## 🚀 Roadmap 2026
+## 📚 Knowledge Base
 
-### 🟢 Fase 1: Buildathon (Enero - Feb 2026) -> **DONE**
+We practice **Domain-Driven Documentation**.
 
-- [x] **Infraestructura**: Clean Repo, Privy Setup, Supabase Migrations.
-- [x] **Identity Sync**: Hook `useUserSync` + API Route segura.
-- [x] **Send Flow**: Formulario de envío verificado en Celo Sepolia.
-- [x] **Enterprise Upgrade**: CI/CD, Testing Framework y Auditoría de Seguridad.
+👉 **[Start with the Documentation Map (MAP.md)](docs/MAP.md)**
 
-### 🟡 Fase 2: The Social Layer (Sprint 3 - Feb 2026)
+### Key Documents
 
-- [ ] **SocialConnect**: Enviar dinero a números de teléfono (Lookups).
-- [ ] **MiniPay Integration**: Optimización UI para Opera Mini.
-- [ ] **Smart Contracts**: Escrow básico para P2P seguro (opcional).
-
-### 🔴 Fase 3: Growth (Post-Buildathon)
-
-- [ ] Crowdfunding Features.
-- [ ] Integration con Latam Hubs (Celo Colombia/México).
+- **Strategy**: [Buildathon Master Plan](docs/product/master-plan.md)
+- **UX/UI**: [Design System & Glassmorphism](docs/design/styleguide.md)
+- **Engineering**: [PWA Architecture](docs/architecture/pwa-spec.md)
+- **AI Toolchain**: [The Trinity Workflow](docs/TOOLCHAIN.md)
 
 ---
 
-## 🎓 VibeCoding & IA
+## 👥 The Squad (AI Native)
 
-Este proyecto es un experimento de **"One Man Army"** potenciado por IA. No tenemos un equipo de 10 personas. Tenemos:
+Puente is built using the **Antigravity Trinity Workflow**:
 
-- **Gemini 2.0**: Arquitecto de Software.
-- **Claude Antigravity**: Ingeniero DevOps y Backend.
-- **v0**: Diseñador UI/UX.
+- **Human Lead**: Luis Sambrano
+- **Planning Intelligence**: Google Gemini 3 Pro
+- **Execution Engine**: Claude Sonnet 4.5
+- **IDE**: Google Antigravity
 
-> **Transparencia Radical**: Documentamos cada error, pivote y decisión.
-> [Leer historias de iteración →](docs/99-iteraciones.md)
-
----
-
-## 👥 Equipo
-
-**One Man Army**
-_Construyendo el futuro financiero de Venezuela._
+[Read the Iteration Logs →](docs/product/master-plan.md)

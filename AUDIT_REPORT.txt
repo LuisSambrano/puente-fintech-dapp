@@ -1,0 +1,39 @@
+# 🛡️ Read-Only Documentation Audit Report
+
+**Date**: 2026-01-30
+**Auditor**: Antigravity Architect (Deepmind)
+**Scope**: `apps/web/src`
+
+---
+
+## 🚨 Critical Discrepancies (Immediate Attention Required)
+
+### 1. Hardcoded Theme Values in `page.tsx`
+*   **Location**: `src/app/page.tsx:25-26`
+*   **Issue**: The main container uses hardcoded Slate values: `bg-slate-50`, `dark:bg-slate-950`, `text-slate-900`.
+*   **Violation**: Breaks the "Solaris/Obsidian" system defined in `globals.css`.
+*   **Remediation**: Replace with `bg-background` and `text-foreground`.
+
+### 2. Inconsistent Glass Implementation in `LandingFeatures.tsx`
+*   **Location**: `src/components/landing/LandingFeatures.tsx` (Passive View)
+*   **Issue**: Legacy glass classes or hardcoded opacities may persist in landing components which haven't been refactored yet.
+*   **Remediation**: Standardize all cards to use the `.glass-deep-frost` utility class.
+
+### 3. "MiniPay Mint" Hex Hardcoding
+*   **Location**: `tailwind.config.js:28`
+*   **Issue**: The primary color is hardcoded as `#2EB078`.
+*   **Risk**: If the brand color changes, it must be updated in multiple places if HSL maps aren't used.
+*   **Status**: Acceptable for MVP, but HSL separation is recommended for future specific theming.
+
+---
+
+## ✅ Compliance Check
+
+*   **UserDashboard.tsx**: ✅ Uses `text-foreground` and semantic structures.
+*   **ActionRing.tsx**: ✅ Uses `glass-deep-frost` and semantic text.
+*   **Globals.css**: ✅ Correctly defines Solaris/Obsidian HSL variables.
+
+---
+
+## 📉 Debt Score: Low
+The system is 90% compliant. The only major outlier is the root `page.tsx` file which still anchors to Slate colors instead of the abstract theme.

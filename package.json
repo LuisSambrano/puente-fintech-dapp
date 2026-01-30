@@ -1,7 +1,17 @@
 {
   "name": "puente-app",
   "version": "0.1.0",
-  "description": "A new Celo blockchain project",
+  "description": "Financial Dignity for the Venezuelan Diaspora. Built on Celo.",
+  "keywords": [
+    "celo",
+    "minipay",
+    "stablecoins",
+    "remittances",
+    "cusd",
+    "venezuela",
+    "pwa",
+    "glassmorphism"
+  ],
   "private": true,
   "scripts": {
     "build": "turbo build",

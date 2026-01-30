@@ -25,7 +25,7 @@ Usuario ya conectó su cuenta de GitHub con Vercel. Esto permite:
 **Vercel AI Gateway** ✅
 
 - **Tipo**: AI
-- **Uso**: Gateway para APIs de IA (Gemini, OpenAI, etc.)
+- **Uso**: Gateway para APIs de IA (Antigravity Toolchain Gateway).
 - **Status**: Ya instalado
 - **Recomendación**: Mantener para futuras features de IA
 
@@ -323,6 +323,7 @@ puente-remesas.vercel.app
 ### Inmediato
 
 1. **Crear proyecto Supabase**
+
    - Ir a https://supabase.com/dashboard
    - Click "New Project"
    - Nombre: `puente-prod`
@@ -330,6 +331,7 @@ puente-remesas.vercel.app
    - Password: [generar seguro]
 
 2. **Conectar Supabase con Vercel**
+
    - Vercel Dashboard → Integrations → Supabase
    - Autorizar y sincronizar
 

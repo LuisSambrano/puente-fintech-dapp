@@ -1,5 +1,5 @@
-import { usePrivy } from '@privy-io/react-auth';
-import { useEffect, useState } from 'react';
+import { usePrivy } from "@privy-io/react-auth";
+import { useEffect, useState } from "react";
 
 export function useUserSync() {
   const { ready, authenticated, getAccessToken, user } = usePrivy();
@@ -15,33 +15,33 @@ export function useUserSync() {
       try {
         const token = await getAccessToken();
         if (!token) {
-           console.error("No access token available for sync");
-           return;
+          console.error("No access token available for sync");
+          return;
         }
 
-        const res = await fetch('/api/auth/sync', {
-          method: 'POST',
+        const res = await fetch("/api/auth/sync", {
+          method: "POST",
           headers: {
-            'Authorization': `Bearer ${token}`
-          }
+            Authorization: `Bearer ${token}`,
+          },
         });
 
         if (!res.ok) {
-          throw new Error('Sync failed');
+          throw new Error("Sync failed");
         }
 
         const data = await res.json();
         setSyncedUser(data.user);
-        console.log('✅ Identity Synced:', data.user);
+        console.log("✅ Identity Synced:", data.user);
       } catch (err) {
-        console.error('❌ Sync Error:', err);
+        console.error("❌ Sync Error:", err);
       } finally {
         setIsSyncing(false);
       }
     };
 
     syncIdentity();
-  }, [ready, authenticated, user?.id, getAccessToken]);
+  }, [ready, authenticated, user, getAccessToken]);
 
   return { isSyncing, syncedUser };
 }

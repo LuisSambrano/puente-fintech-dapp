@@ -55,7 +55,7 @@ Estoy participando en el **LatAm Hubs Buildathon 2026** construyendo **Puente**,
 ### Tools & AI
 
 ![Google AI](https://img.shields.io/badge/Google%20AI%20Pro-4285F4?style=flat&logo=google&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude%20Sonnet-000000?style=flat)
+![Claude](https://img.shields.io/badge/Claude%20Sonnet-4.5-D97757?style=flat)
 ![v0](https://img.shields.io/badge/v0-000000?style=flat&logo=vercel)
 
 ---

@@ -11,7 +11,10 @@
 
 **Herramientas y Ventajas**:
 
-- **IA como Co-Piloto**: Google AI Pro, Gemini, Antigravity.
+- **Stack de Inteligencia (2026)**:
+  - **IDE**: Google Antigravity.
+  - **Planning**: Gemini 3 Pro (HPM).
+  - **Execution**: Claude Sonnet 4.5.
 - **Herramientas No-Code/Low-Code**: v0 para UI, Supabase para backend.
 - **Infraestructura Moderna**: Privy para wallets, Celo para blockchain.
 

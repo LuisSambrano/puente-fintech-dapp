@@ -25,8 +25,14 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#07955F",
+          DEFAULT: "#2EB078", // MiniPay Mint
           foreground: "#FFFFFF",
+        },
+        "bridge-brand": {
+          bg: "#F9FAFB",
+          surface: "#FFFFFF",
+          text: "#111827",
+          accent: "#E8F5EE",
         },
         secondary: {
           DEFAULT: "#2A2C34",
