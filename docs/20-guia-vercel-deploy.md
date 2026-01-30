@@ -70,7 +70,7 @@ Value: sb_publishable_sYwqVOyK3zVB8vZRypHpdg_b-rNfk_9
 
 ```
 Name: SUPABASE_SERVICE_ROLE_KEY
-Value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVtY21hcXNpZ3FobnNremVwdWJwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2OTY1Njc1MiwiZXhwIjoyMDg1MjMyNzUyfQ.unjq4_VU3NkKduUM57Sr9kA7ID5ysrlbWfv_Av4GikY
+Value: <TU_CLAVE_SERVICE_ROLE_AQUI> <!-- NUNCA SUBIR ESTA CLAVE AL REPO -->
 ```
 
 ### Variable 5: Celo Network
@@ -94,6 +94,7 @@ Value: 42220
 ## 📍 Paso 4: Deploy
 
 1. **Verificar** que todo esté configurado:
+
    - ✅ Root Directory: `puente-app/apps/web`
    - ✅ Framework: Next.js
    - ✅ 6 Environment Variables agregadas
@@ -130,9 +131,11 @@ Una vez que termine, verás:
 **Posibles causas**:
 
 1. Root Directory incorrecto
+
    - **Solución**: Ir a Settings → General → Root Directory → Cambiar a `puente-app/apps/web`
 
 2. Environment Variables faltantes
+
    - **Solución**: Settings → Environment Variables → Agregar las que falten
 
 3. Dependencias faltantes
