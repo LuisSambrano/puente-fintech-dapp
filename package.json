@@ -39,7 +39,11 @@
     "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
-  "packageManager": "pnpm@8.10.0",
+  "pnpm": {
+    "overrides": {
+      "elliptic": "^6.6.1"
+    }
+  },
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
