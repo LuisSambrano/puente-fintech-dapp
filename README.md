@@ -4,6 +4,14 @@
 
 P2P remittance platform for Latin America built on Celo blockchain.
 
+<!-- CTAs -->
+<p align="center">
+  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/issues"><img src="https://img.shields.io/github/issues/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="License"/></a>
+</p>
+
 ## Overview
 
 Puente is a non-custodial remittance application designed to reduce friction in cross-border payments for users in high-inflation economies. The platform leverages Celo's L2 blockchain and cUSD stablecoin to provide fast, low-cost international transfers with a mobile-first user interface.
