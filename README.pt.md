@@ -12,6 +12,11 @@ Plataforma de remessas P2P para América Latina construída na blockchain Celo.
   <a href="https://github.com/LuisSambrano/puente-fintech-dapp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="License"/></a>
 </p>
 
+> [!IMPORTANT]
+> **Licencia**: Este proyecto está licenciado bajo [Business Source License 1.1](LICENSE).
+> Puedes ver y estudiar el código fuente con fines educativos, pero **el uso comercial requiere una licencia separada**.
+> Ver [LICENSE](LICENSE) para términos completos.
+
 ## Visão Geral
 
 Puente é uma aplicação de remessas não-custodial projetada para reduzir fricção em pagamentos cross-border para usuários em economias de alta inflação. A plataforma utiliza a blockchain L2 da Celo e stablecoin cUSD para fornecer transferências internacionais rápidas e de baixo custo com interface mobile-first.
