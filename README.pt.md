@@ -1,203 +1,161 @@
 [English](./README.md) | [Español](./README.es.md) | [Português](./README.pt.md)
 
-# Puente
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:2ECC71&height=120&section=header" width="100%" />
+  
+  <img src="./apps/web/public/images/logo.png" alt="Puente" width="200" />
 
-Plataforma de remessas P2P para América Latina construída na blockchain Celo.
+# Remessas Sem Intermediários
 
-<!-- CTAs -->
-<p align="center">
-  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Stars"/></a>
-  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Forks"/></a>
-  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/issues"><img src="https://img.shields.io/github/issues/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="Issues"/></a>
-  <a href="https://github.com/LuisSambrano/puente-fintech-dapp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/puente-fintech-dapp?style=flat-square" alt="License"/></a>
-</p>
+**$0.01 em taxas • 5 segundos • Blockchain transparente**
 
-> [!IMPORTANT] > **Licencia**: Este proyecto está licenciado bajo [Business Source License 1.1](LICENSE).
-> Puedes ver y estudiar el código fuente con fines educativos, pero **el uso comercial requiere una licencia separada**.
-> Ver [LICENSE](LICENSE) para términos completos.
+[![Stars](https://img.shields.io/github/stars/LuisSambrano/puente-fintech-dapp?style=for-the-badge&color=2ECC71)](https://github.com/LuisSambrano/puente-fintech-dapp/stargazers)
+[![License](https://img.shields.io/badge/Licença-BSL_1.1-blue?style=for-the-badge)](./LICENSE)
+[![Build](https://img.shields.io/badge/Build-Passando-success?style=for-the-badge&logo=vercel)](https://puente.vercel.app)
 
-## Arquitetura
-
-```mermaid
-graph TD
-    A[Frontend Next.js 14] --> B[Capa de Auth Privy]
-    B --> C[Carteira Embutida]
-
-    A --> D[Backend Supabase]
-    D --> E[Banco de Dados PostgreSQL]
-    D --> F[Edge Functions]
-
-    C --> G[Rede Celo L2]
-    G --> H[Stablecoin cUSD]
-    G --> I[Smart Contracts]
-
-    A --> J[SocialConnect/ODIS]
-    J --> K[Mapeamento Telefone-Endereço]
-
-    I --> L[Contrato de Remessas]
-    I --> M[Contrato de Escrow]
-
-    style G fill:#FCFF52,stroke:#000,color:#000
-    style H fill:#FCFF52,stroke:#000,color:#000
-    style A fill:#000,stroke:#fff,color:#fff
-    style D fill:#3ECF8E
-```
-
-## Características
-
-### Integração Blockchain
-
-- **Liquidação Celo L2**: Finalidade rápida (<5s)
-- **Stablecoin cUSD**: Proteção contra volatilidade da moeda local
-- **Smart Contracts**: Contratos verificados na Celo Sepolia para roteamento seguro de fundos
-- **Abstração de Gas**: Taxas de transação abaixo de $0.01
-
-### Identidade e Descoberta
-
-- **SocialConnect**: Mapeamento telefone-endereço via ODIS
-- **Descoberta Social**: Envie fundos usando números de telefone em vez de endereços de carteira
-- **Preservação de Privacidade**: Lookup de identidade descentralizado sem expor dados do usuário
-
-### Experiência do Usuário
-
-- **Glassmorphism UI**: Interface translúcida moderna com profundidade e hierarquia
-- **Temas Dinâmicos**: Suporte a modo claro/escuro (temas Solaris/Obsidian)
-- **Controles de Privacidade**: Saldos sensíveis obscurecidos por padrão até autenticação
-- **Mobile-First**: PWA otimizada para MiniPay (Opera Mini) e redes de baixa largura de banda
-
-### Segurança
-
-- **Não-Custodial**: Usuários mantêm controle total de seus fundos
-- **Autenticação Privy**: Carteiras embutidas com suporte a passkey
-- **Log de Auditoria**: Histórico de transações em tempo real via Supabase
-- **Verificação de Smart Contract**: Todos contratos verificados no explorador de blocos Celo
-
-## Stack Tecnológico
-
-![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=flat&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-![Celo](https://img.shields.io/badge/Celo-FCFF52?style=flat&logo=celo&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-
-**Frontend**:
-
-- [Next.js 14](https://nextjs.org/) - Framework React com App Router
-- [TypeScript](https://www.typescriptlang.org/) - Desenvolvimento type-safe
-- [Tailwind CSS](https://tailwindcss.com/) - Estilos utility-first
-- [Framer Motion](https://www.framer.com/motion/) - Animações aceleradas por hardware
-
-**Blockchain**:
-
-- [Celo](https://celo.org/) - Rede blockchain L2 (Sepolia testnet)
-- [cUSD](https://docs.celo.org/protocol/stability) - Stablecoin Celo Dollar
-- [SocialConnect](https://docs.celo.org/protocol/identity) - Protocolo de identidade descentralizada
-- [ODIS](https://docs.celo.org/protocol/identity/odis) - Serviço de identidade descentralizada oblivious
-
-**Infraestrutura**:
-
-- [Privy](https://privy.io/) - Autenticação de carteira embedded
-- [Supabase](https://supabase.com/) - Banco de dados PostgreSQL e Edge Functions
-- [Vercel](https://vercel.com/) - Deploy em rede edge
-
-## Primeiros Passos
-
-### Pré-requisitos
-
-- Node.js 18 ou superior
-- Gerenciador de pacotes pnpm
-- Conta Privy (tier gratuito disponível)
-- Conta Supabase (tier gratuito disponível)
-- Carteira Celo com cUSD testnet (para testes)
-
-### Instalação
-
-1. **Clonar o repositório**:
-
-```bash
-git clone https://github.com/LuisSambrano/puente.git
-cd puente
-```
-
-2. **Instalar dependências**:
-
-```bash
-pnpm install
-```
-
-3. **Configurar variáveis de ambiente**:
-
-Criar um arquivo `.env.local` no diretório raiz:
-
-```env
-NEXT_PUBLIC_PRIVY_APP_ID=seu_privy_app_id
-NEXT_PUBLIC_SUPABASE_URL=sua_url_supabase
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anon_supabase
-NEXT_PUBLIC_CELO_NETWORK=celo-sepolia
-```
-
-4. **Executar servidor de desenvolvimento**:
-
-```bash
-pnpm dev
-```
-
-## Contribuir
-
-Contribuições são bem-vindas. Por favor siga estas diretrizes:
-
-1. Faça fork do repositório
-2. Crie uma branch de feature: `git checkout -b feature/descricao`
-3. Faça suas alterações com commits claros e atômicos
-4. Execute testes: `pnpm test`
-5. Push para seu fork: `git push origin feature/descricao`
-6. Envie um pull request com descrição detalhada
-
-## Estrutura do Projeto
-
-```
-puente/
-├── apps/
-│   ├── web/                    # Aplicação frontend Next.js
-│   │   ├── src/
-│   │   │   ├── app/           # Páginas App Router
-│   │   │   ├── components/    # Componentes React
-│   │   │   ├── lib/           # Utilidades e configurações
-│   │   │   └── types/         # Definições TypeScript
-│   │   └── public/            # Assets estáticos
-│   └── contracts/             # Desenvolvimento de smart contracts
-│       ├── contracts/         # Contratos Solidity
-│       ├── scripts/           # Scripts de deploy
-│       └── test/              # Testes de contratos
-├── docs/                      # Documentação
-├── brandkit/                  # Assets de marca
-└── turbo.json                 # Configuração Turborepo
-```
-
-## 🔬 Pesquisa e Registro de Decisões
-
-Este projeto segue uma metodologia **Research-First**. Todas as decisões estratégicas estão documentadas:
-
-| Documento                                     | Propósito                                      |
-| --------------------------------------------- | ---------------------------------------------- |
-| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Insights destilados da pesquisa                |
-| [prompts/](./research/prompts/)               | Módulos de investigação com tracking           |
-| [docs/](./docs)                               | Documentos originais de pesquisa (26 arquivos) |
-
-> **Resumo Executivo**: Veja [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) para insights destilados e decisões arquitetônicas.
-
-## Licença
-
-Licença MIT - Veja [LICENSE](LICENSE) para detalhes.
-
-## Links
-
-- **Repositório**: [github.com/LuisSambrano/puente](https://github.com/LuisSambrano/puente)
-- **Autor**: [Luis Sambrano](https://github.com/LuisSambrano)
-- **Documentação**: [docs/](./docs)
-- **Pesquisa**: [research/](./research)
-- **Documentação Celo**: [docs.celo.org](https://docs.celo.org)
+</div>
 
 ---
 
-[English](./README.md) | [Español](./README.es.md) | **Português**
+## 🌉 O que é Puente?
+
+Puente é uma plataforma de remessas não custodial para a América Latina construída na **blockchain Celo**. Estamos resolvendo o mercado de $3.8 bilhões em remessas para a Venezuela—onde serviços tradicionais cobram 15% e demoram dias.
+
+**Nossa solução**: Transferências instantâneas por menos de $0.01.
+
+```
+Tradicional: 5 dias, $15 de taxa
+     Puente: 5 segundos, $0.01 de taxa
+```
+
+---
+
+## 🚀 Construindo em Público
+
+> **Status**: Preparando para o Demo do [LatamHubs.lat](https://latamhubs.lat/)
+
+Construímos em público. Cada commit, cada decisão, cada erro—documentado e compartilhado.
+
+| Marco                 | Status       |
+| --------------------- | ------------ |
+| ✅ Landing Page MVP   | Completo     |
+| ✅ Integração Celo    | Completo     |
+| ✅ Auth com Privy     | Completo     |
+| 🔄 SocialConnect ODIS | Em Progresso |
+| 📅 Demo LatamHubs     | Fev 2026     |
+
+---
+
+## 🛠️ Stack Tecnológico
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![Celo](https://img.shields.io/badge/Celo-FCFF52?style=flat&logo=celo&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwind-css&logoColor=white)
+
+</div>
+
+**Blockchain**: Celo L2 • Stablecoin cUSD • SocialConnect/ODIS  
+**Frontend**: Next.js 15 • Framer Motion • UI Glassmorphism  
+**Backend**: Supabase • Edge Functions • PostgreSQL  
+**Auth**: Privy Embedded Wallets
+
+---
+
+## ⚡ Início Rápido
+
+```bash
+# Clonar
+git clone https://github.com/LuisSambrano/puente-fintech-dapp.git
+cd puente-fintech-dapp
+
+# Instalar
+pnpm install
+
+# Configurar (copiar e editar)
+cp apps/web/.env.example apps/web/.env.local
+
+# Executar
+pnpm dev
+```
+
+Abrir [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🏗️ Arquitetura
+
+```mermaid
+graph TD
+    A[Frontend Next.js] --> B[Privy Auth]
+    B --> C[Wallet Embutida]
+    C --> D[Celo L2]
+    D --> E[Transferências cUSD]
+    A --> F[Supabase]
+    F --> G[PostgreSQL]
+```
+
+---
+
+## 👥 Junte-se ao Time
+
+> **Filosofia Vibecoding**: Acreditamos que o grande software é construído em estado de flow—com alegria, não com estresse.
+
+Buscamos pessoas apaixonadas para se juntar à nossa missão. **Talento venezuelano preferido** (remoto amigável mundialmente).
+
+### 💼 Cargos Fintech que Precisamos
+
+| Cargo                             | O que Você Fará                                     |
+| --------------------------------- | --------------------------------------------------- |
+| 🔧 **Auditor de Smart Contracts** | Revisar e garantir nossos contratos Solidity        |
+| 🎨 **Desenvolvedor Frontend**     | Melhorar nossa UI Glassmorphism com React/Next.js   |
+| 📊 **Analista de Dados**          | Construir dashboards de analytics e taxas           |
+| 🌍 **Community Manager**          | Crescer nossa comunidade LatAm (Espanhol/Português) |
+| 📝 **Criador de Conteúdo**        | Documentar nossa jornada de build-in-public         |
+| ⚖️ **Consultor de Compliance**    | Navegar regulações fintech na LatAm                 |
+| 🎯 **UX Researcher**              | Entrevistar usuários e validar product-market fit   |
+| 📱 **Product Manager**            | Priorizar features e shipear conosco                |
+
+### 🎯 Como Entrar
+
+1. **Dê uma estrela neste repo** ⭐
+2. **Abra uma issue** com seu interesse
+3. **Me manda DM**: [@luissambrano_ux](https://x.com/luissambrano_ux) (Twitter) ou [@luissambrano_ux](https://t.me/luissambrano_ux) (Telegram)
+
+> _Experiência formal não é requisito—valorizamos paixão, curiosidade e mentalidade de shipping sobre credenciais._
+
+---
+
+## 📚 Pesquisa e Documentação
+
+| Documento                                     | Propósito                         |
+| --------------------------------------------- | --------------------------------- |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Insights destilados da pesquisa   |
+| [docs/](./docs)                               | Documentação técnica              |
+| [research/](./research)                       | Análise de mercado e investigação |
+
+---
+
+## 📄 Licença
+
+[Business Source License 1.1](./LICENSE) — Visualize e estude o código livremente. Uso comercial requer licença separada.
+
+---
+
+<div align="center">
+
+### 🌎 LatamHubs 2026
+
+Estamos nos preparando para o [LatamHubs.lat](https://latamhubs.lat/)—construindo o futuro das remessas para a América Latina.
+
+**Siga nossa jornada**:  
+[![Twitter](https://img.shields.io/badge/@luissambrano__ux-000000?style=flat&logo=x&logoColor=white)](https://x.com/luissambrano_ux)
+[![Telegram](https://img.shields.io/badge/@luissambrano__ux-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/luissambrano_ux)
+[![GitHub](https://img.shields.io/badge/LuisSambrano-181717?style=flat&logo=github&logoColor=white)](https://github.com/LuisSambrano)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:2ECC71&height=80&section=footer" width="100%" />
+
+</div>
