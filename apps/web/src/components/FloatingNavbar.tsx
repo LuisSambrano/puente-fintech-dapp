@@ -10,6 +10,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ConnectButton } from "@/components/connect-button";
 import { ModeToggle } from "./ModeToggle";
 
+import { useMiniPay } from "@/hooks/useMiniPay";
+
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Docs", href: "https://docs.celo.org", external: true },
@@ -17,6 +19,7 @@ const navLinks = [
 
 export function FloatingNavbar() {
   const pathname = usePathname();
+  const { isMiniPay } = useMiniPay();
 
   return (
     <motion.header
@@ -74,7 +77,7 @@ export function FloatingNavbar() {
                     </span>
                     <ModeToggle />
                   </div>
-                  <ConnectButton />
+                  {!isMiniPay && <ConnectButton />}
                 </div>
               </nav>
             </SheetContent>
@@ -118,7 +121,7 @@ export function FloatingNavbar() {
         <div className="flex items-center gap-2">
           <ModeToggle />
           <div className="hidden sm:block">
-            <ConnectButton />
+            {!isMiniPay && <ConnectButton />}
           </div>
         </div>
       </div>

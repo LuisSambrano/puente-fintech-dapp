@@ -5,7 +5,8 @@ import {
   useBalance,
 } from "wagmi";
 import { parseEther } from "viem";
-import { CUSD_CONTRACT_ADDRESS } from "../utils/constants";
+import { celoSepolia } from "viem/chains";
+import { CELO_TOKENS } from "../config/tokens";
 import ERC20_ABI from "../utils/abis/erc20.json";
 
 export function useTransferStable() {
@@ -28,17 +29,26 @@ export function useTransferStable() {
       hash,
     });
 
+  /*
+   * Updated by Antigravity (Celo Integration Phase)
+   * Now uses dynamic chain ID to select correct cUSD address
+   */
+  const chainId = useAccount().chainId || celoSepolia.id;
+  const tokens =
+    CELO_TOKENS[chainId as keyof typeof CELO_TOKENS] ||
+    CELO_TOKENS[celoSepolia.id];
+
   const transferStable = async (to: string, amount: string) => {
-    // 2. Gas Logic: If < 0.01 CELO, pay with cUSD
+    // 2. Gas Logic: If < 0.01 CELO, pay with cUSD (Fee Abstraction)
     let feeCurrency = undefined;
     if (celoBalance && parseFloat(celoBalance.formatted) < 0.01) {
       console.log("💰 Low CELO balance. Paying gas with cUSD.");
-      feeCurrency = CUSD_CONTRACT_ADDRESS;
+      feeCurrency = tokens.cUSD;
     }
 
     // 3. Execute Transfer
     return writeContractAsync({
-      address: CUSD_CONTRACT_ADDRESS as `0x${string}`,
+      address: tokens.cUSD as `0x${string}`,
       abi: ERC20_ABI,
       functionName: "transfer",
       args: [to, parseEther(amount)],
