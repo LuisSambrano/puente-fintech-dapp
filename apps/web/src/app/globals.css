@@ -37,34 +37,34 @@
   }
 
   .dark {
-    /* Obsidian Dark Mode */
-    --background: 240 5.9% 4.1%; /* #0A0A0B (Obsidian Deep) - NO PURE BLACK */
-    --foreground: 0 0% 100%;
+    /* Pump.fun Premium Black */
+    --background: 0 0% 0%; /* #000000 Pure Black */
+    --foreground: 0 0% 100%; /* #FFFFFF Pure White */
 
-    --card: 240 5.9% 4.1%;
+    --card: 0 0% 3%; /* Very dark gray for contrast */
     --card-foreground: 0 0% 100%;
 
-    --popover: 240 5.9% 4.1%;
+    --popover: 0 0% 3%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 154 59% 44%; /* Mint Preserved */
-    --primary-foreground: 0 0% 100%;
+    --primary: 145 63% 49%; /* #2ECC71 Neon Green */
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 10%; /* Dark Gray */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 145 63% 49%; /* Neon Green */
+    --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 154 59% 44%;
+    --border: 0 0% 15%; /* Subtle borders */
+    --input: 0 0% 15%;
+    --ring: 145 63% 49%;
   }
 }
 

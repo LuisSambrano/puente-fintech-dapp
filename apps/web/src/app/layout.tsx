@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { FloatingNavbar } from "@/components/FloatingNavbar";
+import Header from "@/components/marketing/Header";
 import { FloatingFooter } from "@/components/FloatingFooter";
 import { Providers } from "@/components/Providers";
 import { NetworkGuard } from "@/components/NetworkGuard";
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     "cusd",
   ],
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F9FAFB" }, // Solaris
-    { media: "(prefers-color-scheme: dark)", color: "#0A0A0B" }, // Obsidian
+    { media: "(prefers-color-scheme: light)", color: "#000000" }, // Force Black
+    { media: "(prefers-color-scheme: dark)", color: "#000000" }, // Pure Black
   ],
   openGraph: {
     type: "website",
@@ -55,12 +55,14 @@ export const metadata: Metadata = {
     creator: "@puente_app",
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   manifest: "/manifest.json", // We will generate this via route or file
 };
+
+import MobileBottomNav from "@/components/marketing/MobileBottomNav";
 
 export default function RootLayout({
   children,
@@ -70,18 +72,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/20">
+        <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/20 pb-16 lg:pb-0">
           <Providers>
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
-              enableSystem
+              defaultTheme="dark" // Force Dark Mode
+              enableSystem={false} // Disable System
               disableTransitionOnChange
             >
               <NetworkGuard>
-                <FloatingNavbar />
-                <main className="flex-1 w-full pt-32 pb-32">{children}</main>
-                <FloatingFooter />
+                <Header />
+                <main className="flex-1">{children}</main>
+                <MobileBottomNav />
+                {/* <FloatingFooter /> */}
               </NetworkGuard>
             </ThemeProvider>
           </Providers>
