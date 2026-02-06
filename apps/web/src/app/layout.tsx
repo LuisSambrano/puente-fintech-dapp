@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -10,7 +10,15 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#000000" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://puente.lat"),
   title: {
     default: "Puente | The Glass Vault",
     template: "%s | Puente",
@@ -26,10 +34,6 @@ export const metadata: Metadata = {
     "stablecoins",
     "venezuela",
     "cusd",
-  ],
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#000000" }, // Force Black
-    { media: "(prefers-color-scheme: dark)", color: "#000000" }, // Pure Black
   ],
   openGraph: {
     type: "website",
