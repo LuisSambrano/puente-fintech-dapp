@@ -36,8 +36,8 @@
     "@types/node": "^20.8.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "supabase": "^2.75.5",
-    "turbo": "^1.10.16",
+    "supabase": "^2.76.3",
+    "turbo": "^2.3.0",
     "typescript": "^5.2.2",
     "viem": "^2.45.1"
   },

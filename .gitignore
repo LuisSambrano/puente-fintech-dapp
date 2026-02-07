@@ -100,3 +100,10 @@ Thumbs.db
 .turbo
 .vercel
 .env*.local
+
+# Additional env protection
+.env.production.final_check
+*.final_check
+*.backup
+*_backup
+.vercel/.env.*
