@@ -234,4 +234,8 @@ Construyendo el futuro de las remesas para Latinoamérica.
 
 **Hecho con ❤️ para la diáspora venezolana**
 
+## 📄 Legal & Community
+
+[Security Policy](./SECURITY.md) • [Code of Conduct](./CODE_OF_CONDUCT.md) • [Changelog](./CHANGELOG.md)
+
 </div>

@@ -1,9 +1,17 @@
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
+
 /**
  * Format a number as currency
  */
-export function formatCurrency(amount: number, currency = 'USD'): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
+export function formatCurrency(amount: number, currency = "USD"): string {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
     currency,
   }).format(amount);
 }
@@ -11,7 +19,11 @@ export function formatCurrency(amount: number, currency = 'USD'): string {
 /**
  * Truncate an address for display
  */
-export function truncateAddress(address: string, startLength = 6, endLength = 4): string {
+export function truncateAddress(
+  address: string,
+  startLength = 6,
+  endLength = 4
+): string {
   if (address.length <= startLength + endLength) {
     return address;
   }

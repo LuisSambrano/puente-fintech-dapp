@@ -1,5 +1,13 @@
 "use client";
 
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
+
 import { usePrivy } from "@privy-io/react-auth";
 import { useEffect, useState } from "react";
 
@@ -16,7 +24,10 @@ export function ConnectButton() {
 
   if (!ready) {
     return (
-      <button disabled className="px-4 py-2 rounded-md bg-gray-200 text-gray-500 text-sm font-medium">
+      <button
+        disabled
+        className="px-4 py-2 rounded-md bg-gray-200 text-gray-500 text-sm font-medium"
+      >
         Loading...
       </button>
     );
@@ -26,9 +37,11 @@ export function ConnectButton() {
     return (
       <div className="flex items-center gap-4">
         <span className="text-sm text-gray-700">
-          {user?.email ? user.email.address : user?.wallet?.address?.slice(0, 6) + '...'}
+          {user?.email
+            ? user.email.address
+            : user?.wallet?.address?.slice(0, 6) + "..."}
         </span>
-        <button 
+        <button
           onClick={logout}
           className="px-4 py-2 rounded-md bg-red-50 text-red-600 text-sm font-medium hover:bg-red-100 transition-colors"
         >

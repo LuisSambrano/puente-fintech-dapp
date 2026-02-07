@@ -234,4 +234,8 @@ Construindo o futuro das remessas para a América Latina.
 
 **Feito com ❤️ para a diáspora venezuelana**
 
+## 📄 Legal & Community
+
+[Security Policy](./SECURITY.md) • [Code of Conduct](./CODE_OF_CONDUCT.md) • [Changelog](./CHANGELOG.md)
+
 </div>

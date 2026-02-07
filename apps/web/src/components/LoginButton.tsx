@@ -1,5 +1,13 @@
 "use client";
 
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
+
 import { usePrivy } from "@privy-io/react-auth";
 import { Button } from "@/components/ui/button";
 
@@ -24,7 +32,11 @@ export function LoginButton() {
   }
 
   return (
-    <Button onClick={login} size="lg" className="px-8 py-3 text-base font-medium">
+    <Button
+      onClick={login}
+      size="lg"
+      className="px-8 py-3 text-base font-medium"
+    >
       Login to Puente
     </Button>
   );

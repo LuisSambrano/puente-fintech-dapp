@@ -1,6 +1,14 @@
-import * as React from "react"
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
 
-import { cn } from "@/lib/utils"
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
@@ -17,9 +25,9 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         ref={ref}
         {...props}
       />
-    )
+    );
   }
-)
-Input.displayName = "Input"
+);
+Input.displayName = "Input";
 
-export { Input }
+export { Input };

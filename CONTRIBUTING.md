@@ -44,9 +44,27 @@ Example: `feat(auth): add SSO login support`
 - Add comments for complex logic
 - Update documentation when needed
 
+## Project Structure Tour
+
+To help you navigate the codebase:
+
+- **`apps/web`**: All Next.js frontend logic.
+  - **`src/components/landing`**: Public pages (Hero, Features, Pricing).
+  - **`src/components/app`**: Protected dashboard components (Requires Auth).
+  - **`src/lib/hooks`**: Custom React hooks.
+- **`apps/contracts`**: Solidity Smart Contracts (Hardhat).
+
+## Legal & IP
+
+This project is licensed under **BSL 1.1**.
+
+- You may contribute improvements.
+- You may NOT use this code for commercial competing products.
+- See `LICENSE` for details.
+
 ## Code of Conduct
 
-Be respectful and inclusive. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) if available.
+Be respectful and inclusive. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## Questions?
 

@@ -1,5 +1,13 @@
 "use client";
 
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, Calculator, BarChart3, Play } from "lucide-react";

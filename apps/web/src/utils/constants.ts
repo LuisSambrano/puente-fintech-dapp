@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2026 Luis Sambrano.
+ * Licensed under the Business Source License 1.1 (BSL 1.1).
+ * See LICENSE file for details.
+ *
+ * COMMERCIAL USE PROHIBITED without express permission.
+ */
+
 export const CUSD_ADDRESS_SEPOLIA =
   "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1"; // Celo Sepolia
 export const CUSD_ADDRESS_MAINNET =

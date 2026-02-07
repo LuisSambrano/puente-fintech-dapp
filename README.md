@@ -234,4 +234,8 @@ Building the future of remittances for Latin America.
 
 **Made with ❤️ for the Venezuelan diaspora**
 
+## 📄 Legal & Community
+
+[Security Policy](./SECURITY.md) • [Code of Conduct](./CODE_OF_CONDUCT.md) • [Changelog](./CHANGELOG.md)
+
 </div>
