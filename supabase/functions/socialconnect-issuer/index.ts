@@ -111,8 +111,8 @@ serve(async (req) => {
       // or use a relayer approach.
       // Below is the scaffolding for the contract call.
 
-      const PRIVATE_KEY = Deno.env.get("ISSUER_PRIVATE_KEY");
-      if (!PRIVATE_KEY) throw new Error("Server configuration error: Missing Issuer Key");
+      const PRIVATE_KEY = Deno.env.get("SERVICE_WALLET_PRIVATE_KEY");
+      if (!PRIVATE_KEY) throw new Error("Server configuration error: Missing Service Wallet Key");
 
       // Define Celo Sepolia Chain (if not in viem exports)
       const celoSepolia = {
