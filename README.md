@@ -5,9 +5,9 @@
   
   <img src="./apps/web/public/images/logo.png" alt="Puente" width="200" />
 
-# Remesas Sin Intermediarios
+# Remittances Without Intermediaries
 
-**$0.01 en fees • 5 segundos • Blockchain transparente**
+**$0.01 fees • 5 seconds • Transparent blockchain**
 
 [![Stars](https://img.shields.io/github/stars/LuisSambrano/puente-fintech-dapp?style=for-the-badge&color=2ECC71)](https://github.com/LuisSambrano/puente-fintech-dapp/stargazers)
 [![License](https://img.shields.io/badge/License-BSL_1.1-blue?style=for-the-badge)](./LICENSE)
@@ -19,34 +19,54 @@
 
 ## 🌉 What is Puente?
 
-Puente is a non-custodial remittance platform for Latin America built on **Celo blockchain**. We're solving the $3.8 billion Venezuela remittance market—where traditional services charge 15% and take days.
+> _"That money is for your family. Not for banks."_
 
-**Our solution**: Instant transfers for under $0.01.
+Puente is **the financial super-app for the Venezuelan diaspora**—starting with remittances and expanding to crowdfunding and creator donations. Built on Celo blockchain.
+
+### The Problem
+
+**$3.8 billion** sent annually to Venezuela  
+**15%** lost in fees (Western Union, MoneyGram)  
+**3-5 days** to arrive  
+**7.89 million** Venezuelans abroad sending money home
+
+### Our Solution
 
 ```
-Traditional: 5 days, $15 fee
-    Puente: 5 seconds, $0.01 fee
+Western Union:  5 days  →  $15 fee on $100  (15%)
+        Puente:  5 secs  →  $0.01 fee on $100  (<0.01%)
 ```
+
+**1,500x cheaper • 86,400x faster**
 
 ---
 
-## 🚀 Building in Public
+## 🚀 3-Phase Roadmap
 
-> **Status**: Preparing for [LatamHubs.lat](https://latamhubs.lat/) Hackathon Demo
+```
+PHASE 1           │ PHASE 2          │ PHASE 3
+REMITTANCES       │ CROWDFUNDING     │ DONATIONS
+(Q1 2026)         │ (Q2 2026)        │ (Q3 2026)
+──────────────────┼──────────────────┼──────────────
+MVP - Active      │ Planned          │ Planned
+Send/Receive cUSD │ Medical/Emergency│ Support Creators
+<$0.01 fees       │ 2% fee (vs 10%)  │ 1% fee (vs 10%)
+```
 
-We build in public. Every commit, every decision, every mistake—documented and shared.
+### Current Status
 
 | Milestone             | Status      |
 | --------------------- | ----------- |
-| ✅ MVP Landing Page   | Complete    |
+| ✅ Landing Page       | Complete    |
 | ✅ Celo Integration   | Complete    |
 | ✅ Privy Auth         | Complete    |
-| 🔄 SocialConnect ODIS | In Progress |
-| 📅 LatamHubs Demo     | Feb 2026    |
+| 🔄 SocialConnect/ODIS | In Progress |
+| 📅 100 Mainnet Txs    | Feb 2026    |
+| 📅 LatamHubs Demo     | Feb 27      |
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ Tech Stack
 
 <div align="center">
 
@@ -61,7 +81,15 @@ We build in public. Every commit, every decision, every mistake—documented and
 **Blockchain**: Celo L2 • cUSD Stablecoin • SocialConnect/ODIS  
 **Frontend**: Next.js 15 • Framer Motion • Glassmorphism UI  
 **Backend**: Supabase • Edge Functions • PostgreSQL  
-**Auth**: Privy Embedded Wallets
+**Auth**: Privy Embedded Wallets (non-custodial)
+
+### Why Celo?
+
+1. **Mobile-first**: Built for emerging markets (perfect for LATAM)
+2. **Cheap**: Gas fees <$0.01 (vs Ethereum $5-50)
+3. **Fast**: 5-second finality
+4. **SocialConnect**: Phone number → Wallet mapping (game changer for UX)
+5. **LATAM ecosystem**: CeLatam, Celo Mexico, Celo Colombia
 
 ---
 
@@ -72,17 +100,46 @@ We build in public. Every commit, every decision, every mistake—documented and
 git clone https://github.com/LuisSambrano/puente-fintech-dapp.git
 cd puente-fintech-dapp
 
-# Install
+# Install dependencies
 pnpm install
 
-# Configure (copy and edit)
+# Configure environment
 cp apps/web/.env.example apps/web/.env.local
+# Edit apps/web/.env.local with your keys
 
-# Run
+# Run development server
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🎯 Our MOAT (Competitive Advantages)
+
+### 1. SocialConnect/ODIS Integration
+
+- **Phone → Wallet mapping**: No more copying addresses
+- **Decentralized**: Privacy-preserving lookups
+- **Network effects**: More users = more phone numbers = more useful
+
+### 2. Non-Custodial + Simple UX
+
+- **Privy embedded wallets**: Email login (no seed phrases)
+- **You control funds**: We can't access your money
+- **Best of both worlds**: Security of DeFi + UX of fintech
+
+### 3. LATAM-First Focus
+
+- Content in Spanish/Portuguese
+- Partnerships with CeLatam, Celo Mexico
+- Designed specifically for Venezuela diaspora
+
+### 4. Build in Public
+
+- GitHub public repo
+- Transparent roadmap
+- Community involvement in decisions
 
 ---
 
@@ -96,66 +153,85 @@ graph TD
     D --> E[cUSD Transfers]
     A --> F[Supabase]
     F --> G[PostgreSQL]
+    D --> H[SocialConnect/ODIS]
+    H --> I[Phone → Address]
 ```
 
+**User Flow:**
+
+1. Login with email (Privy)
+2. Enter recipient's phone number
+3. SocialConnect resolves phone → address
+4. Enter amount in USD
+5. Confirm (sign transaction)
+6. ✅ Sent in 5 seconds
+
 ---
 
-## 👥 Join the Team
+## 📊 LatamHubs Buildathon
 
-> **Vibecoding Philosophy**: We believe great software is built in flow state—with joy, not stress.
+**Competition**: [LatamHubs.lat](https://latamhubs.lat/)  
+**Track**: MiniApps (Prize: 3,000 CELO + 300 cUSD)  
+**Dates**: Jan 19 → Feb 27, 2026  
+**Focus**: Mainnet transactions (bonus for high activity)
 
-We're looking for passionate people to join our mission. **Venezuelan talent preferred** (remote-friendly worldwide).
+### Our Strategy
 
-### 💼 Fintech Roles We Need
+- **Early deployment**: Week 6 (early Feb)
+- **Incentivize usage**: Free transfers (0% fee during buildathon)
+- **Referral program**: "Send to 3 friends, get $5 cUSD"
+- **Goal**: 100+ mainnet transactions by Feb 27
 
-| Role                          | What You'll Do                                  |
-| ----------------------------- | ----------------------------------------------- |
-| 🔧 **Smart Contract Auditor** | Review and secure our Solidity contracts        |
-| 🎨 **Frontend Developer**     | Enhance our Glassmorphism UI with React/Next.js |
-| 📊 **Data Analyst**           | Build fee analytics and market dashboards       |
-| 🌍 **Community Manager**      | Grow our LatAm community (Spanish/Portuguese)   |
-| 📝 **Content Creator**        | Document our build-in-public journey            |
-| ⚖️ **Compliance Advisor**     | Navigate LatAm fintech regulations              |
-| 🎯 **UX Researcher**          | Interview users and validate product-market fit |
-| 📱 **Product Manager**        | Prioritize features and ship with us            |
+---
 
-### 🎯 How to Join
+## 👥 Join the Mission
+
+> **Building for 7.89 million Venezuelans abroad**
+
+We're looking for passionate people to join our team. **Venezuelan talent preferred** (remote-friendly worldwide).
+
+### Open Roles
+
+| Role                          | Impact                                      |
+| ----------------------------- | ------------------------------------------- |
+| 🔧 **Smart Contract Auditor** | Secure our Solidity contracts               |
+| 🎨 **Frontend Developer**     | Enhance Glassmorphism UI                    |
+| 📊 **Data Analyst**           | Build fee analytics dashboards              |
+| 🌍 **Community Manager**      | Grow LATAM community (Spanish/Portuguese)   |
+| 📝 **Content Creator**        | Document our build-in-public journey        |
+| ⚖️ **Compliance Advisor**     | Navigate LatAm fintech regulations          |
+| 🎯 **UX Researcher**          | Validate product-market fit with real users |
+
+### How to Join
 
 1. **Star this repo** ⭐
-2. **Open an issue** with your interest
+2. **Open an issue** describing your interest + skills
 3. **DM me**: [@luissambrano_ux](https://x.com/luissambrano_ux) (Twitter) or [@luissambrano_ux](https://t.me/luissambrano_ux) (Telegram)
 
-> _No formal experience required—we value passion, curiosity, and shipping mindset over credentials._
-
----
-
-## 📚 Research & Documentation
-
-| Document                                      | Purpose                         |
-| --------------------------------------------- | ------------------------------- |
-| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Distilled research insights     |
-| [docs/](./docs)                               | Technical documentation         |
-| [research/](./research)                       | Market analysis & investigation |
+> _Passion + shipping mindset > credentials_
 
 ---
 
 ## 📄 License
 
-[Business Source License 1.1](./LICENSE) — View and study the code freely. Commercial use requires a separate license.
+[Business Source License 1.1](./LICENSE)
+
+**TL;DR**: View and study the code freely. Commercial use requires a separate license.
 
 ---
 
 <div align="center">
 
-### 🌎 LatamHubs 2026
+### 🌎 Follow Our Journey
 
-We're preparing for [LatamHubs.lat](https://latamhubs.lat/)—building the future of remittances for Latin America.
+Building the future of remittances for Latin America.
 
-**Follow our journey**:  
 [![Twitter](https://img.shields.io/badge/@luissambrano__ux-000000?style=flat&logo=x&logoColor=white)](https://x.com/luissambrano_ux)
 [![Telegram](https://img.shields.io/badge/@luissambrano__ux-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/luissambrano_ux)
 [![GitHub](https://img.shields.io/badge/LuisSambrano-181717?style=flat&logo=github&logoColor=white)](https://github.com/LuisSambrano)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:2ECC71&height=80&section=footer" width="100%" />
+
+**Made with ❤️ for the Venezuelan diaspora**
 
 </div>
