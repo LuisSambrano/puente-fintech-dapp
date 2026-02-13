@@ -16,6 +16,8 @@ import {
 import { celoAlfajores } from "viem/chains";
 import { privateKeyToAccount } from "viem/accounts";
 import { federatedAttestationsABI } from "@celo/abis";
+import { getServerEnv } from "@/lib/env";
+import { z } from "zod";
 
 // Force dynamic rendering to prevent static generation
 export const dynamic = "force-dynamic";
@@ -27,9 +29,10 @@ const SEPOLIA_RPC = "https://forno.celo-sepolia.celo-testnet.org";
 const FEDERATED_ATTESTATIONS_ADDRESS =
   "0xD52Ac6Ae87fca373106cF000B81e7A540B2791e5" as Address; // Alfajores
 
-// Environment Variables check
-const PRIVATE_KEY = process.env.SERVICE_WALLET_PRIVATE_KEY;
-const ACCOUNT_ADDRESS = process.env.SERVICE_WALLET_ADDRESS;
+// Validation schema
+const phoneSchema = z
+  .string()
+  .regex(/^\+[1-9]\d{1,14}$/, "Invalid phone number format (E.164 required)");
 
 export async function POST(request: Request) {
   try {
@@ -37,21 +40,22 @@ export async function POST(request: Request) {
     const { OdisUtils } = await import("@celo/identity");
     const { OdisContextName } = await import("@celo/identity/lib/odis/query");
 
-    const { phoneNumber } = await request.json();
+    const body = await request.json();
+    const parseResult = phoneSchema.safeParse(body.phoneNumber);
 
-    if (!phoneNumber) {
+    if (!parseResult.success) {
       return NextResponse.json(
-        { error: "Phone Number required" },
+        { error: parseResult.error.issues[0].message },
         { status: 400 }
       );
     }
 
-    if (!PRIVATE_KEY || !ACCOUNT_ADDRESS) {
-      return NextResponse.json(
-        { error: "Server misconfiguration (Wallet)" },
-        { status: 500 }
-      );
-    }
+    const phoneNumber = parseResult.data;
+
+    // Environment Variables check (Server-side only)
+    const env = getServerEnv();
+    const PRIVATE_KEY = env.SERVICE_WALLET_PRIVATE_KEY;
+    const ACCOUNT_ADDRESS = env.SERVICE_WALLET_ADDRESS;
 
     // Initialize viem clients (NO contractkit)
     const issuer = privateKeyToAccount(PRIVATE_KEY as `0x${string}`);
@@ -80,7 +84,9 @@ export async function POST(request: Request) {
       },
     };
 
-    console.log(`[API] Looking up phone: ${phoneNumber}`);
+    // Mask PII in logs
+    const maskedPhone = `${phoneNumber.slice(0, 3)}...${phoneNumber.slice(-4)}`;
+    console.log(`[API] Looking up phone: ${maskedPhone}`);
 
     // 3. Get obfuscated identifier from ODIS
     const { obfuscatedIdentifier } =
@@ -120,6 +126,7 @@ export async function POST(request: Request) {
 
     // --- LAB FALLBACK (FOR DEMO/TESTING ONLY) ---
     if (!resolvedAddress && process.env.NODE_ENV !== "production") {
+      // Use the raw phoneNumber here for the specific check, but it's safe as it's a constant check
       if (phoneNumber === "+5491155555555") {
         console.log("[LAB] Using Mock Registry Fallback");
         resolvedAddress = ACCOUNT_ADDRESS as Address;
@@ -153,8 +160,9 @@ export async function POST(request: Request) {
       );
     }
 
+    // Generic error for client, full details in server logs
     return NextResponse.json(
-      { error: error.message || "Lookup Failed" },
+      { error: "Lookup Failed" },
       { status: 500 }
     );
   }

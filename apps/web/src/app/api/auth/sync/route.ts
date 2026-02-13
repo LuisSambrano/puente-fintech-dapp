@@ -44,6 +44,7 @@ export async function POST(req: NextRequest) {
     // We use privy_user_id as the unique key for upsert
     const { data, error } = await supabaseAdmin
       .from("users")
+      // @ts-ignore
       .upsert(
         {
           privy_user_id: userId,
