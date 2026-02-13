@@ -25,6 +25,7 @@ async function main() {
 
   const { data, error } = await supabaseAdmin
     .from("users")
+    // @ts-ignore
     .upsert(testUser, { onConflict: "privy_user_id" })
     .select()
     .single();

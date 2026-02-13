@@ -46,6 +46,6 @@ export function getSupabaseAdmin() {
 // Uses lazy getter to avoid crashing at module load time
 export const supabaseAdmin = new Proxy({} as ReturnType<typeof createClient>, {
   get(_target, prop) {
-    return (getSupabaseAdmin() as Record<string | symbol, unknown>)[prop];
+    return (getSupabaseAdmin() as unknown as Record<string | symbol, unknown>)[prop];
   },
 });
