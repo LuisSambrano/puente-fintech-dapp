@@ -23,7 +23,7 @@ async function main() {
     full_name: "Antigravity Test Bot",
   };
 
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await (supabaseAdmin as any)
     .from("users")
     .upsert(testUser, { onConflict: "privy_user_id" })
     .select()
@@ -37,7 +37,7 @@ async function main() {
   console.log("✅ Upsert Success:", data);
 
   // Cleanup
-  await supabaseAdmin
+  await (supabaseAdmin as any)
     .from("users")
     .delete()
     .eq("privy_user_id", testUser.privy_user_id);

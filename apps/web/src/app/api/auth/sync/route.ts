@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
     // 4. Upsert into Supabase (using Admin client to bypass RLS/Permission)
     // We use privy_user_id as the unique key for upsert
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await (supabaseAdmin as any)
       .from("users")
       .upsert(
         {

@@ -27,12 +27,12 @@ const SEPOLIA_RPC = "https://forno.celo-sepolia.celo-testnet.org";
 const FEDERATED_ATTESTATIONS_ADDRESS =
   "0xD52Ac6Ae87fca373106cF000B81e7A540B2791e5" as Address; // Alfajores
 
-// Environment Variables check
-const PRIVATE_KEY = process.env.SERVICE_WALLET_PRIVATE_KEY;
-const ACCOUNT_ADDRESS = process.env.SERVICE_WALLET_ADDRESS;
-
 export async function POST(request: Request) {
   try {
+    // Environment Variables check
+    const PRIVATE_KEY = process.env.SERVICE_WALLET_PRIVATE_KEY;
+    const ACCOUNT_ADDRESS = process.env.SERVICE_WALLET_ADDRESS;
+
     // Dynamic imports to avoid build-time bundling issues
     const { OdisUtils } = await import("@celo/identity");
     const { OdisContextName } = await import("@celo/identity/lib/odis/query");
@@ -42,6 +42,16 @@ export async function POST(request: Request) {
     if (!phoneNumber) {
       return NextResponse.json(
         { error: "Phone Number required" },
+        { status: 400 }
+      );
+    }
+
+    // Validate phone number format (E.164)
+    // Starts with + and followed by 1 to 15 digits
+    const phoneRegex = /^\+[1-9]\d{1,14}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      return NextResponse.json(
+        { error: "Invalid Phone Number format" },
         { status: 400 }
       );
     }
