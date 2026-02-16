@@ -16,6 +16,7 @@ import {
 import { celoAlfajores } from "viem/chains";
 import { privateKeyToAccount } from "viem/accounts";
 import { federatedAttestationsABI } from "@celo/abis";
+import { isValidE164PhoneNumber } from "@/lib/validation";
 
 // Force dynamic rendering to prevent static generation
 export const dynamic = "force-dynamic";
@@ -42,6 +43,13 @@ export async function POST(request: Request) {
     if (!phoneNumber) {
       return NextResponse.json(
         { error: "Phone Number required" },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidE164PhoneNumber(phoneNumber)) {
+      return NextResponse.json(
+        { error: "Invalid phone number format" },
         { status: 400 }
       );
     }
@@ -153,9 +161,6 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json(
-      { error: error.message || "Lookup Failed" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Lookup Failed" }, { status: 500 });
   }
 }
