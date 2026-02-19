@@ -36,10 +36,12 @@ const PRIVY_APP_ID = process.env.NEXT_PUBLIC_PRIVY_APP_ID;
 
 export function Providers({ children }: { children: React.ReactNode }) {
   // Prevent PrivyProvider from throwing during static prerendering
-  // when environment variables are not available
-  if (!PRIVY_APP_ID) {
+  // when environment variables are not available OR when using dummy values in CI
+  const isInvalidAppId = !PRIVY_APP_ID || PRIVY_APP_ID === "test-app-id";
+
+  if (isInvalidAppId) {
     console.warn(
-      "[Providers] NEXT_PUBLIC_PRIVY_APP_ID not set, skipping PrivyProvider"
+      "[Providers] NEXT_PUBLIC_PRIVY_APP_ID not set or invalid, skipping PrivyProvider"
     );
     return (
       <QueryClientProvider client={queryClient}>
@@ -50,7 +52,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <PrivyProvider
-      appId={PRIVY_APP_ID}
+      appId={PRIVY_APP_ID!}
       config={{
         loginMethods: ["email", "wallet"],
         appearance: {
