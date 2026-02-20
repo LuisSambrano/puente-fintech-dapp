@@ -18,6 +18,7 @@ import { privateKeyToAccount } from "viem/accounts";
 import { federatedAttestationsABI } from "@celo/abis";
 import { getServerEnv } from "@/lib/env";
 import { isValidE164PhoneNumber } from "@/utils/validation";
+import { maskPhoneNumber } from "@/utils/format";
 
 // Force dynamic rendering to prevent static generation
 export const dynamic = "force-dynamic";
@@ -81,7 +82,7 @@ export async function POST(request: Request) {
       },
     };
 
-    console.log(`[API] Looking up phone: ${phoneNumber}`);
+    console.log(`[API] Looking up phone: ${maskPhoneNumber(phoneNumber)}`);
 
     // 3. Get obfuscated identifier from ODIS
     const { obfuscatedIdentifier } =
