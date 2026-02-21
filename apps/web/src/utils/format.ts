@@ -33,3 +33,15 @@ export function truncateAddress(address: string | undefined): string {
   if (!address) return "";
   return `${address.slice(0, 6)}...${address.slice(-4)}`;
 }
+
+/**
+ * Masks a phone number for privacy, showing only the last 4 digits.
+ * @param phoneNumber - The full phone number.
+ * @returns The masked phone number (*******1234).
+ */
+export function maskPhoneNumber(phoneNumber: string): string {
+  if (!phoneNumber || phoneNumber.length < 4) return "****";
+  const last4 = phoneNumber.slice(-4);
+  const masked = "*".repeat(phoneNumber.length - 4);
+  return masked + last4;
+}
