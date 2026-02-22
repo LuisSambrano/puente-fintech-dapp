@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect } from "vitest";
-import { formatCurrency, truncateAddress } from "./format";
+import { formatCurrency, truncateAddress, maskPhoneNumber } from "./format";
 
 describe("formatCurrency", () => {
   it("formats USD correctly", () => {
@@ -33,5 +33,24 @@ describe("truncateAddress", () => {
 
   it("handles empty input", () => {
     expect(truncateAddress(undefined)).toBe("");
+  });
+});
+
+describe("maskPhoneNumber", () => {
+  it("masks valid phone number", () => {
+    expect(maskPhoneNumber("+15551234567")).toBe("********4567");
+  });
+
+  it("masks short phone number", () => {
+    expect(maskPhoneNumber("1234")).toBe("****");
+  });
+
+  it("handles empty input", () => {
+    expect(maskPhoneNumber(undefined)).toBe("");
+    expect(maskPhoneNumber("")).toBe("");
+  });
+
+  it("masks phone number with 5 digits", () => {
+    expect(maskPhoneNumber("12345")).toBe("*2345");
   });
 });
